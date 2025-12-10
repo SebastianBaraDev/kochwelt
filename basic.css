@@ -71,8 +71,8 @@ main {
 }
 footer {
     display: flex;
-    justify-content: flex-start;
-    align-self: center;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1440px;
     height: 144px;
     padding: 40px 160px;
