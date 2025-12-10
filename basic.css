@@ -1,9 +1,9 @@
-*body {
+body {
     margin: 0;
     font-family: raleway;
     font-size: 24px;
 }
-.bg-grey {
+.bg_grey {
     background-color: #403B3B;
 }
 h1 {
@@ -36,6 +36,7 @@ a:hover {
 header {
     max-width: 1440px;
     height: 144px;
+    padding: 40px 160px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,19 +47,37 @@ header img {
 header a {
     text-decoration: none;
     color: #403B3B;
+    font-size: 24px;
 }
 header a:hover {
     text-decoration: underline;
     color: #008000;
 }
+nav {
+    display: flex;
+    gap: 25px;
+    height: 128px;
+    align-items: flex-end;
+}
+nav ul {
+    margin-block-start: 1.5rem;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
 main {
     max-width: 1440px;
-    height: 100vh;
+    padding: 40px 160px;
+    margin: 0;
 }
 footer {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
     max-width: 1440px;
     height: 144px;
+    padding: 40px 160px;
 }
 footer img {
     height: 44px;
+    width: 44px;
 }

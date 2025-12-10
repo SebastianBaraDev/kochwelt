@@ -1,0 +1,28 @@
+.recipe {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+.recipe_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.recipe_suggestions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+.how_to {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 40px 0;
+}
+.footer_links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
