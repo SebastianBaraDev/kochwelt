@@ -39,9 +39,10 @@ button {
 a {
     text-decoration: none;
     color: white;
+    padding-bottom: 1px;
 }
 a:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid #ffffff 
 }
 header {
     max-width: 1440px;
@@ -59,10 +60,11 @@ header a {
     text-decoration: none;
     color: #403B3B;
     font-size: 24px;
+    padding-bottom: 3px;
 }
 header a:hover {
-    text-decoration: underline;
     color: #008000;
+    border-bottom: 5px solid #008000 
 }
 nav {
     display: flex;
