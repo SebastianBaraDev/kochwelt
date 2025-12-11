@@ -7,13 +7,23 @@ body {
     background-color: #403B3B;
 }
 h1 {
-    font-size: 96px;
-}
-h2 {
     font-size: 80px;
 }
-h3 {
+h2 {
     font-size: 56px;
+}
+h3 {
+    font-size: 48px;
+}
+h4 {
+    font-size: 40px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+h5 {
+    font-size: 32px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 img {
     height: 352px;
@@ -29,17 +39,19 @@ button {
 a {
     text-decoration: none;
     color: white;
+    padding-bottom: 1px;
 }
 a:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid #ffffff 
 }
 header {
     max-width: 1440px;
     height: 144px;
-    padding: 40px 160px;
+    padding: 40px 160px 0 160px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
 }
 header img {
     height: 64px;
@@ -48,10 +60,11 @@ header a {
     text-decoration: none;
     color: #403B3B;
     font-size: 24px;
+    padding-bottom: 3px;
 }
 header a:hover {
-    text-decoration: underline;
     color: #008000;
+    border-bottom: 5px solid #008000 
 }
 nav {
     display: flex;
@@ -68,6 +81,13 @@ main {
     max-width: 1440px;
     padding: 40px 160px;
     margin: 0;
+}
+main a {
+    color: blue;
+    text-decoration: none;
+}
+main a:hover {
+    text-decoration: underline;
 }
 footer {
     display: flex;
