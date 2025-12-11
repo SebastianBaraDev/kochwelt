@@ -1,5 +1,11 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
 body {
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
     font-family: raleway;
     font-size: 24px;
 }
@@ -75,6 +81,7 @@ main {
     max-width: 1440px;
     padding: 40px 160px;
     margin: 0;
+    flex: 1;
 }
 main a {
     color: blue;
@@ -101,8 +108,20 @@ footer {
 footer a {
     text-decoration: none;
     color: white;
-    padding-bottom: 1px;
 }
 footer a:hover {
-    border-bottom: 1px solid #ffffff 
+    text-decoration: underline; 
+}
+.footer_social {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.footer_social_a:hover {
+    filter: brightness(0) saturate(100%) invert(91%) sepia(98%) saturate(6505%) hue-rotate(325deg) brightness(87%) contrast(89%);;
+}
+.social_icon {
+    height: 40px;
+    width: auto;
+    padding-bottom: 16px;
 }
