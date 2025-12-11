@@ -23,8 +23,7 @@
 }
 .footer_links {
     display: flex;
-    align-items: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 .recipe_ingredients_table {
@@ -45,9 +44,4 @@
     height: 41px;
     margin-left: 10px;
 
-}
-
-.h2 {
-
-    
 }
