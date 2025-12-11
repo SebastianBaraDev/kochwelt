@@ -26,3 +26,28 @@
     align-items: center;
     gap: 30px;
 }
+
+.recipe_ingredients_table {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.recipe_ingredients_header {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.recipe_input_form {
+    height: 41px;
+    margin-left: 10px;
+
+}
+
+.h2 {
+
+    
+}
