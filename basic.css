@@ -35,6 +35,7 @@ button {
     padding: 10px 20px 10px 20px;
     font-weight: bold;
     font-size: 20px;
+    cursor: pointer;
 }
 header {
     max-width: 1440px;
@@ -89,6 +90,8 @@ footer {
     max-width: 1440px;
     height: 144px;
     padding: 40px 160px;
+    background-color: #403B3B;
+    background-size: cover;
 }
 .footer_logo {
     height: 90px;
