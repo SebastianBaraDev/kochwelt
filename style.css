@@ -28,8 +28,7 @@
 }
 
 .recipe_ingredients_table {
-    display: flex;
-    align-items: center;
+ 
 
 
 }
@@ -47,7 +46,7 @@
 
 }
 
-.h2 {
+h2 {
 
-    
+
 }
