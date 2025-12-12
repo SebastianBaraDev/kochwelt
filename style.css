@@ -26,22 +26,85 @@
     gap: 50px;
 }
 
+.recipe_image {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    background-image: url('./img/rinderrouladen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+}
+.recipe_info_line {
+    display: flex;
+    gap: 24px;
+}
+#divider {
+    background-color: #f2f2f2;
+    height: 1px;
+    margin-bottom: 10px;
+}
+.recipe_info {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.recipe_icons {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+th {
+    text-align: center;
+}
+td {
+    padding: 10px 20px;
+}
+.tr_grey {
+    background-color: #f2f2f2;
+}
+td:first-child {
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+td:last-child {
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+ol {
+    margin-bottom: 100px;
+}
+li {
+    padding-bottom: 30px;
+}
+.recipe_profil {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0 200px 0;
+}
+.recipe_profil img {
+    height: 250px;
+    width: auto;
+    border-radius: 25px;
+}
 .recipe_ingredients_table {
     display: flex;
     align-items: center;
-
-
 }
-
 .recipe_ingredients_header {
     display: flex;
     align-items: center;
-
-
 }
-
 .recipe_input_form {
     height: 41px;
     margin-left: 10px;
-
 }
