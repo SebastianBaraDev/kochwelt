@@ -1,26 +1,43 @@
+
 .recipe {
     display: flex;
+    margin-top: 50px;
+    gap: 40px;
     justify-content: flex-start;
     text-align: center;
 }
-.recipe_right {
+
+.recipe_suggestions {
+    margin: 90px 0;
+    text-align: center;
+    background-color:  #f5f5f5; ;
+
+}
+
+.cards {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.recipe_suggestions {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 40px 0;
+    gap: 50px;
+    margin-top: 40px;
 }
+
 .how_to {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin: 40px 0;
+    padding: 80px 0;
 }
+
+.howto-grid {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 40px;
+    align-items: center;
+}
+
+.howto-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
 .footer_links {
     display: flex;
     align-items: center;

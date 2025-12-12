@@ -1,22 +1,39 @@
+/* FONTS */
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-Bold.woff2") format("woff2");
+    font-weight: 700;
+}
+
+/* BODY */
 body {
     margin: 0;
-    font-family: raleway;
-    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    color: #222;
 }
+
+
 .bg_grey {
     background-color: #403B3B;
 }
 h1 {
-    font-size: 80px;
+    font-size: 48px;
+    font-weight: 700;
 }
 h2 {
-    font-size: 56px;
+    font-size: 32px;
 }
 h3 {
-    font-size: 48px;
+    font-size: 24px;
 }
 h4 {
-    font-size: 40px;
+    font-size: 24px;
     margin-block-start: 0;
     margin-block-end: 0;
 }
@@ -78,9 +95,10 @@ nav ul {
     padding-inline-start: 0;
 }
 main {
+    width: 100%;
     max-width: 1440px;
     padding: 40px 160px;
-    margin: 0;
+    margin: 0 auto;
 }
 main a {
     color: blue;
