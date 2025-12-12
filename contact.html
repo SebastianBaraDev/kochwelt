@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/logo_small.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="basic.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+
+  <script src="./contact.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
+    <nav>
+      <a href="./index.html">
+        <ul>Startseite</ul>
+      </a>
+      <a href="./rezept_des_tages.html">
+        <ul>Rezept des Tages</ul>
+      </a>
+      <a href="./contact.html">
+        <ul>Kontakt</ul>
+      </a>
+      <a href="./impressum.html">
+        <ul>Impressum</ul>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact_formular">
+      <form onsubmit="sendMail(event)">
+        <h3>Kontaktiere uns</h3><br>
+        <label for="name">Ihr Name:</label><br>
+        <input type="text"><br>
+
+        <label for="email">Ihre E-Mail:</label><br>
+        <input type="email"><br>
+
+        <label for="message">Ihre Nachtricht:</label><br>
+        <textarea name="message" id="message" rows="4" cols="50"></textarea><br>
+
+        <button type="submit">Senden</button><br>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <img src="./img/logo.png" class="footer_logo">
+
+    <div>
+      <div class="footer_social">
+        <a href="https://facebook.com" class="footer_social_a"><img src="./img/facebook_white.png"
+            class="social_icon"></a>
+        <a href="https://instagram.com" class="footer_social_a"><img src="./img/instagram_white.png"
+            class="social_icon"></a>
+        <a href="https://x.com" class="footer_social_a"><img src="./img/twitter_white.png" class="social_icon"></a>
+      </div>
+      <div class="footer_links">
+        <a href="./impressum.html">Impressum</a> |
+        <a href="./datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
