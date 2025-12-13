@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="basic.css">
+
+
 </head>
 
 <body>
@@ -55,13 +57,17 @@
             </div>
         </div>
 
-        <div id="divider"></div>
+    
+<hr>
+<div id="results"></div>
 
         <div class="recipe_ingredients_header">
             <span>Zutaten für</span>
             <input type ="number" min="1" max="20" value= "1" id="portions" class="recipe_input_form">
-            <button>Portionen</button>
+            <button onclick="calculator()">Portionen</button>
         </div>
+<p id="meinAbsatz"></p>
+
 
         <table class="recipe_ingredients_table">
             <tr>
@@ -71,7 +77,7 @@
             </tr>
 
             <tr class="tr_grey">
-                <td>30</td>
+                <td><p id="rosinen">30</p></td>
                 <td>g</td>
                 <td>Rosinen</td>
             </tr>
@@ -112,7 +118,7 @@
             </tr>
 
         </table>
-
+     <script src="./javascript/portions_calculator.js"></script>
         <h3>Zubereitung</h3>
         <div class="recipe_info_line">
             <div class="recipe_info">
