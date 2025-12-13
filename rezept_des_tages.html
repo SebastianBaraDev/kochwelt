@@ -1,36 +1,125 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rezept des Tages</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo_small.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/logo_small.png"
+    />
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="basic.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="basic.css" />
+  </head>
+  <body>
     <header>
-        <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
-        <nav>
-            <a href="./index.html"><ul>Startseite</ul></a>
-            <a href="./rezept_des_tages.html"><ul>Rezept des Tages</ul></a>
-            <a href="./contact.html"><ul>Kontakt</ul></a>
-            <a href="./impressum.html"><ul>Impressum</ul></a>
-        </nav>
+      <a href="./index.html"
+        ><img src="./img/logo.png" class="header_logo"
+      /></a>
+      <nav>
+        <a href="./index.html"
+          ><ul>
+            Startseite
+          </ul></a
+        >
+        <a href="./rezept_des_tages.html"
+          ><ul>
+            Rezept des Tages
+          </ul></a
+        >
+        <a href="./contact.html"
+          ><ul>
+            Kontakt
+          </ul></a
+        >
+        <a href="./impressum.html"
+          ><ul>
+            Impressum
+          </ul></a
+        >
+      </nav>
     </header>
 
     <main>
+      <h3>Rezept des Tages – Gebratener Lachs mit Salat aus Zucchini und Grapefruit</h3>
 
+      <img src="/img/gebratener-lachs-mit-salat-aus-zucchini-und-grapefruit-147110.jpg" class="full-img" />
+
+      <div class="recipe_info_line">
+        <div class="recipe_info">
+          <img
+            src="./img/icons/clock-regular.svg"
+            alt="time_icon"
+            class="recipe_icons"
+          />
+          <span>ca. 35 Minuten</span>
+        </div>
+        <div class="recipe_info">
+          <img
+            src="./img/icons/brain-solid.svg"
+            alt="time_icon"
+            class="recipe_icons"
+          />
+          <span>mittel</span>
+        </div>
+        <div class="recipe_info">
+          <img
+            src="./img/icons/calendar-alt-regular.svg"
+            alt="time_icon"
+            class="recipe_icons"
+          />
+          <span>12.12.2025</span>
+        </div>
+      </div>
+
+      <div class="recipe-box">
+        <div class="left-box">
+          <h3>Portionen</h3>
+          <div class="portion-control">
+            <button id="decrease">-</button>
+            <span id="portion-count">1</span>
+            <button id="increase">+</button>
+            <span>Personen</span>
+          </div>
+
+          <h3>Zutaten</h3>
+          <ul id="ingredients">
+            <li data-base="125">Lachsfilet, tiefgefroren</li>
+            <li data-base="0.5">0.5 St. Grapefruit</li>
+            <li data-base="0.25">0.25 St. Schalotten</li>
+            <li data-base="0.5">0.5 St. Zucchini</li>
+            <li data-base="1.25">1.25 EL Olivenöl</li>
+            <li data-base="0.25">0.25 TL Senf</li>
+            <li data-base="#">Prise Salz</li>
+            <li data-base="#">Pfefer, schwarz gemahlen</li>
+            <li data-base="0.25">0.25 St. Bio Zitrone</li>
+          </ul>
+        </div>
+
+        <div class="right-box">
+          <h3>Zubereitung</h3>
+          <ol>
+            <li>Lachs am besten über Nacht im Kühlschrank auftauen lassen. Grapefruits mit einem Messer so dick schälen, dass auch die weiße Innenhaut mit entfernt wird. Filets zwischen den Trennwänden herausschneiden, dabei den Saft auffangen.</li>
+            <li>Schalotte halbieren, schälen und würfeln. Zucchini waschen, Enden entfernen und in dünne Scheiben schneiden.</li>
+            <li>In einer Pfanne 2 EL Öl auf mittlerer bis hoher Stufe erhitzen und die Zucchini darin ca. 1–2 Min. anbraten. Anschließend herausnehmen.</li>
+            <li>Erneut 1 EL Öl in der Pfanne erhitzen und die Schalotten darin für ca. 2 Min. glasig anbraten. In einer Schüssel mit 2 EL Öl, Grapefruitsaft, Senf, Salz und Pfeffer zu einem Dressing verrühren. Zucchini und Grapefruit vorsichtig unterheben.</li>
+            <li>Salat mit Salz und Pfeffer abschmecken. Gebratener Lachs mit Salat aus Zucchini und Grapefruit Teller anrichten und servieren.</li>
+            <li>Guten Appetit!</li>
+          </ol>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <img src="./img/logo.png" class="footer_logo">
-        <div class="footer_links">
-            <a href="./impressum.html">Impressum</a> |
-            <a href="./datenschutz.html">Datenschutz</a>
-        </div>
+      <img src="./img/logo.png" class="footer_logo" />
+      <div class="footer_links">
+        <a href="./impressum.html">Impressum</a> |
+        <a href="./datenschutz.html">Datenschutz</a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
