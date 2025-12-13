@@ -23,6 +23,15 @@
   
 }
 
+.separator {
+  background-color: gray;
+  
+  max-width: 1440px;
+  height: 5px;
+  margin-top: -48px;
+  margin-bottom: 58px;
+}
+
 
 .recipe_suggestions {
     margin: 90px 0;
