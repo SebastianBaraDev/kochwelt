@@ -14,8 +14,8 @@
 
 <body>
 
-<header>
-        <img src="./img/logo.png">
+    <header>
+        <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
         <nav>
             <a href="./index.html"><ul>Startseite</ul></a>
             <a href="./rezept_des_tages.html"><ul>Rezept des Tages</ul></a>
@@ -24,64 +24,120 @@
         </nav>
     </header>
 
-    <h3>Rezeptname</h3>
-
-    <div>
-    <img src="./img/salad.jpg" alt="receipe_img">    
+     <main>
+        <h3>Kaiserschmarren nach Omas Art</h3>
+    <div class="recipe_image_kaiserschmarren">
     </div>
-   <div class="special_recipe_info"> <img src="./img/icons/clock-regular.svg" alt="time_icon"><span>ca. xx Minuten</span> <img src="./img/icons/brain-solid.svg" alt="time_icon"><span>simpel</span><img src="./img/icons/calendar-alt-regular.svg" alt="time_icon"><span>11.12.2025</span></div> 
 
-    <div class="recipe_ingredients_header"> <span>Zutaten für</span> <input class="recipe_input_form"> <button>Portionen</button></div>  
+   <div class="recipe_info_line"> 
+        <div class="recipe_info">
+            <img src="./img/icons/clock-regular.svg" alt="time_icon" class="recipe_icons">
+            <span>ca. 60 Minuten</span> 
+        </div>
+        <div class="recipe_info">
+            <img src="./img/icons/brain-solid.svg" alt="time_icon" class="recipe_icons">
+            <span>mittel</span>
+        </div>
+        <div class="recipe_info">
+            <img src="./img/icons/calendar-alt-regular.svg" alt="time_icon" class="recipe_icons">
+            <span>13.12.2025</span>
+        </div>
+    </div> 
+
+    <div id="divider"></div>
+
+    <div class="recipe_ingredients_header">
+        <span>Zutaten für</span> 
+        <input class="recipe_input_form"> 
+        <button>Portionen</button>
+    </div>  
+
      <table class="recipe_ingredients_table">   
         <tr>
-            <td>quantity 1</td>
-            <td></td>
-            <td>Ingredient 1</td>
+            <th>Menge</th>
+            <th>Einh.</th>
+            <th>Zutaten</th>
+        </tr>
+        
+        <tr class="tr_grey">
+            <td>30</td>
+            <td>g</td>
+            <td>Rosinen</td>
         </tr>
         <tr>
-            <td>quantity 2</td>
-            <td></td>
-            <td>Ingredient 2</td>
+            <td>4</td>
+            <td>cl</td>
+            <td>Rum</td>
+        </tr>
+        <tr class="tr_grey">
+            <td>1</td>
+            <td>Stück</td>
+            <td>Ei (mittelgroß)</td>
         </tr>
         <tr>
-            <td>quantity 3</td>
-            <td></td>
-            <td>Ingredient 3</td>
+            <td>50</td>
+            <td>g</td>
+            <td>Zucker</td>
+        </tr>
+        <tr class="tr_grey">
+            <td>3</td>
+            <td>EL</td>
+            <td>Apfelmus</td>
         </tr>
         <tr>
-            <td>quantity 4</td>
-            <td></td>
-            <td>Ingredient 4</td>
+            <td>200</td>
+            <td>g</td>
+            <td>Schlagobers</td>
+        </tr>
+        <tr class="tr_grey">
+            <td>50</td>
+            <td>g</td>
+            <td>Zartbitterschokolade geschmolzen</td>
         </tr>
         <tr>
-            <td>quantity 5</td>
-            <td></td>
-            <td>Ingredient 5</td>
+            <td>20</td>
+            <td>g</td>
+            <td>Backkakao (ungesüßt)</td>
         </tr>
-        <tr>
-            <td>quantity 6</td>
-            <td></td>
-            <td>Ingredient 6</td>
-        </tr>
+       
     </table>
 
-<h3>Zubereitung</h3>
-<div class="time_duration_info"> <img src="./img/icons/clock-regular.svg" alt="time_icon"><span>ca. xx Minuten</span> <img src="./img/icons/clock-regular.svg" alt="time_icon"><span>ca. xx Minuten</span></div> 
+    <h3>Zubereitung</h3>
+    <div class="recipe_info_line">
+        <div class="recipe_info"> 
+            <img src="./img/icons/clock-regular.svg" alt="time_icon" class="recipe_icons">
+            <span><strong>7 Std.</strong> Gesamtzeit</span>
+        </div>
+        <div class="recipe_info"> 
+            <img src="./img/icons/clock-regular.svg" alt="time_icon" class="recipe_icons">
+            <span><strong>1Std.</strong> Arbeitszeit</span>
+        </div> 
+    </div>
+    <ol type="1">
+        <li>Rosinen am Vortag in den Rum einlegen.</li>
+        <li>Am nächsten Tag Ei mit Zucker über einem Wasserbad schaumig rühren. Anschließend das Apfelmus einrühren. Vom Wasserbad nehmen und weiterrühren, bis die Mischung ungefähr Zimmertemperatur hat.</li>
+        <li>Das Obers halbfest aufschlagen und nach und nach unter die Apfelmus-Einmasse heben. Die in Rum eingelegten Rosinen ebenfalls vorsichtig unterheben.</li>
+        <li>Masse ca. 3cm hoch in eine mit Backpapier ausgekleidete Form (z.B.: Kastenform) geben und 6 Stunden gefrieren lassen.</li>
+        <li>Optional die geschmolzene Schokolade auf die Oberfläche gießen. Parfait entweder mit einer Teigspartel aus der Form heben und in Stücke teilen oder mit dem Papier aus der Form heben und teilen. Vor dem Servieren mit Kakao bestreuen.</li>
+    </ol>
+    
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus, odit laboriosam vel, dicta accusamus maiores ab aut atque minima eius! Odit omnis reprehenderit ratione quidem molestiae maxime? Fuga, voluptatum.</p>
 
-<h3>Rezept erstellt von</h3>
+<h5>Rezept erstellt von</h5>
 
-<div class="recipe_person"><img src="./img/profile.png" alt="person_icon"><span>Guenther</span></div> 
- <div class="bg_grey">
+    <div class="recipe_profil">
+        <img src="./img/profile_guenther.png" alt="Profilbild des Autors">
+        <p style="font-size: 40px;">Guenther<p>
+    </div>
+    </main>
+    
     <footer>
-        <img src="./img/logo_small.png">
+        <img src="./img/logo.png" class="footer_logo">
         <div class="footer_links">
-            <a href="./impressum.html">Impressum</a>
+            <a href="./impressum.html">Impressum</a> |
             <a href="./datenschutz.html">Datenschutz</a>
         </div>
     </footer>
-    </div>
 
 </body>
 

@@ -1,55 +1,97 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kochwelt</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo_small.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kochwelt</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/logo_small.png">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="basic.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="basic.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
 </head>
-<body>
-    <header>
-        <a href="./index.html"><img src="./img/logo.png"></a>
-        <nav>
-            <a href="./index.html"><ul>Startseite</ul></a>
-            <a href="./rezept_des_tages.html"><ul>Rezept des Tages</ul></a>
-            <a href="./kontakt.html"><ul>Kontakt</ul></a>
-            <a href="./impressum.html"><ul>Impressum</ul></a>
-        </nav>
-    </header>
 
-    <main>
+<body>
+  <header>
+    <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
+    <nav>
+      <a href="./index.html">
+        <ul>Startseite</ul>
+      </a>
+      <a href="./rezept_des_tages.html">
+        <ul>Rezept des Tages</ul>
+      </a>
+      <a href="./contact.html">
+        <ul>Kontakt</ul>
+      </a>
+      <a href="./impressum.html">
+        <ul>Impressum</ul>
+      </a>
+    </nav>
+  </header>
+
+    <main class="container">
         <section class="recipe">
-            <img src="./img/croissant.jpg" class="recipe_img">
-                <div class="recipe_right">
-                    <span>wegfwrgw</span>
-                    <button>Rezept öffnen</button>
-                </div>
-        </section>
-        <section class="recipe_suggestions">
-            <img src="./img/croissant.jpg">
-            <img src="./img/croissant.jpg">
-            <img src="./img/croissant.jpg">
-        </section>
-        <section class="how_to">
-            <article>
-                <span>sdjbvjlksdv</span>
-            </article>
-            <img src="./img/croissant.jpg">
-        </section>
+        <img src="img/croissant.jpg" alt="Frische Croissants">
+
+        <div>
+            <h1>Französische Croissants</h1>
+            <p>Schmackhafte Croissants können auch zu Hause sehr einfach gebacken werden.
+            Mit ca. 30 Minuten Aufwand kannst du ein wundervolles Frühstück zaubern.</p>
+            <button>Rezept öffnen</button>
+        </div>
+    </section>
+
+    <section class="recipe_suggestions ">
+        <h2>Lust auf was Neues?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="img/croissant.jpg" alt="guenthers-rezept">
+                <p>rezept_guenther</p>
+            </div>
+
+            <div class="card">
+                <img src="img/croissant.jpg" alt="julians-rezept">
+                <p>rezept_julian</p>
+            </div>
+
+            <div class="card">
+                <img src="img/croissant.jpg" alt="sebastians-rezept">
+                <p>rezept_sebastian</p>
+            </div>
+
+        </div>
+    </section>
+
+     <section class="how_to">
+        <h2>Pfanne vs. Wok – Was ist besser?</h2>
+
+        <div class="howto-grid">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur debitis veritatis aut,
+            nemo dolor tempore, sed necessitatibus voluptate pariatur adipisci incidunt odit, labore ducimus.</p>
+
+            <img src="img/wok.jpg" alt="Wok">
+        </div>
+    </section>
+  
     </main>
 
-    <div class="bg_grey">
-    <footer>
-        <img src="./img/logo_small.png">
-        <div class="footer_links">
-            <a href="./impressum.html">Impressum</a>
-            <a href="./datenschutz.html">Datenschutz</a>
-        </div>
-    </footer>
+  <footer>
+    <img src="./img/logo.png" class="footer_logo">
+    <div class="footer_links">
+      <a href="./impressum.html">Impressum</a> |
+      <a href="./datenschutz.html">Datenschutz</a>
     </div>
-    
+  </footer>
+
 </body>
+
 </html>
