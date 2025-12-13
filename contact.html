@@ -56,13 +56,13 @@
       <form onsubmit="sendMail(event)">
         <h3>Kontaktiere uns</h3><br>
         <label for="name">Ihr Name:</label><br>
-        <input type="text"><br>
+        <input type="text" required><br>
 
         <label for="email">Ihre E-Mail:</label><br>
-        <input type="email"><br>
+        <input type="email" required><br>
 
         <label for="message">Ihre Nachtricht:</label><br>
-        <textarea name="message" id="message" rows="4" cols="50"></textarea><br>
+        <textarea name="message" id="message" rows="4" cols="50" required></textarea><br>
 
         <button type="submit">Senden</button><br>
       </form>
