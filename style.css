@@ -186,7 +186,9 @@ li {
 
 .recipe_input_form {
   height: 41px;
+  margin-top: 8px;
   margin-left: 10px;
+  border-radius: 4px;
 }
 
 /* Contact area */
