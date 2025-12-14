@@ -36,6 +36,9 @@ h5 {
     height: 352px;
     width: 352px;
 }
+.d_none {
+    display: none;
+}
 button {
     background-color: #008000;
     color: white;
@@ -56,6 +59,10 @@ header {
 .header_logo {
     height: 120px;
     width: 400px;
+}
+.header_logo_mobile {
+    height: 64px;
+    display: none;
 }
 header nav a {
     text-decoration: none;
@@ -105,6 +112,12 @@ footer {
     height: 90px;
     width: 300px; 
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+.footer_logo_small {
+    display: none;
+    height: 44px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+
 }
 footer a {
     text-decoration: none;
