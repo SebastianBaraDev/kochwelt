@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="basic.css">
+
+
 </head>
 
 <body>
@@ -63,6 +65,33 @@
             <button>Portionen</button>
         </div>
 
+        <div class="recipe_info_line">
+            <div class="recipe_info">
+                <img src="./img/icons/clock-regular.svg" alt="time_icon" class="recipe_icons">
+                <span>ca. 60 Minuten</span>
+            </div>
+            <div class="recipe_info">
+                <img src="./img/icons/brain-solid.svg" alt="time_icon" class="recipe_icons">
+                <span>mittel</span>
+            </div>
+            <div class="recipe_info">
+                <img src="./img/icons/calendar-alt-regular.svg" alt="time_icon" class="recipe_icons">
+                <span>13.12.2025</span>
+            </div>
+        </div>
+
+    
+<hr>
+<div id="results"></div>
+
+        <div class="recipe_ingredients_header">
+            <span>Zutaten für</span>
+            <input type ="number" min="1" max="20" value= "4" id="portions" class="recipe_input_form">
+            <button onclick="calcrecipe()">Portionen</button>
+        </div>
+<p id="meinAbsatz"></p>
+
+
         <table class="recipe_ingredients_table">
             <tr>
                 <th>Menge</th>
@@ -72,6 +101,7 @@
 
             <tr class="tr_grey">
                 <td>30</td>
+                <td id="rosinen">30</td>
                 <td>g</td>
                 <td>Rosinen</td>
             </tr>
@@ -112,6 +142,8 @@
             </tr>
 
         </table>
+
+     <script src="./javascript/portions_calculator_test_gue.js"></script>
 
         <h3>Zubereitung</h3>
         <div class="recipe_info_line">
