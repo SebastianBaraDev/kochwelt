@@ -7,12 +7,21 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./img/logo_small.png">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="basic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/basic.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/menu_window.css">
+
 </head>
 <body>
     <header>
         <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
+        <a href="./index.html"><img src="./img/logo_small.png" class="header_logo_mobile"></a>
+
         <nav>
             <a href="./index.html"><ul>Startseite</ul></a>
             <a href="./rezept_des_tages.html"><ul>Rezept des Tages</ul></a>
@@ -47,7 +56,7 @@
         <span>Zutaten für</span> 
         <input class="recipe_input_form"> 
         <button>Portionen</button>
-    </div>  
+    </div><br>
 
      <table class="recipe_ingredients_table">   
         <tr>
@@ -162,6 +171,7 @@
 
     <footer>
         <img src="./img/logo.png" class="footer_logo">
+        <img src="./img/logo_small.png" class="footer_logo_small">
         <div class="footer_links">
             <a href="./impressum.html">Impressum</a> |
             <a href="./datenschutz.html">Datenschutz</a>
