@@ -11,9 +11,30 @@ let zartbitterschokolade = 50;
 let backkakao = 20;
 
 
-/*Funktion*/
+/*Objekt
+
+let my_recipe_object ={
+    rosinen : 30,
+    rum : 4,
+    ei : 1,
+    zucker : 50,
+    apfelmus : 3,
+    schlagobers : 200,
+    zartbitterschokolade : 50,
+    backkakao : 20,
+}*/
+
+
+/*Funktionen*/
 
 function calcrecipe(){
+    calc()
+    value()
+}
+
+/*Kalkulation*/
+
+function calc(){
     console.log("Button gedrückt")
     const portions = document.getElementById("portions").value;
     console.log(portions)
@@ -24,7 +45,9 @@ function calcrecipe(){
 
 
 /*Ausgabe des Wertes in HTML*/
-
+function value(){
 let amount = document.getElementById("rosinen");
-amount.innerHTML = calcrecipe();
+amount.innerHTML = calc();
 console.log(amount.innerHTML);
+return amount
+}
