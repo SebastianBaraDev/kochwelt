@@ -176,6 +176,9 @@ li {
 .recipe_ingredients_table {
   display: flex;
   align-items: center;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-bottom: 40px;
 }
 
 .recipe_ingredients_header {
@@ -257,3 +260,12 @@ textarea {
   border-radius: 10px;
   margin-top: 40px;
 }
+
+/*Visualisierung Tabelle zum Bearbeiten*/
+/*td {
+  padding: 8px; 
+  text-align: left;
+  border: 1px solid black;
+
+}
+*/
