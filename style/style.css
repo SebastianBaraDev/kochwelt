@@ -11,8 +11,7 @@
   display: flex;
   margin-top: 50px;
   gap: 40px;
-  justify-content: flex-start;
-  text-align: center;
+  
 }
 
 .recipe img {
@@ -25,7 +24,6 @@
 
 .separator {
   background-color: gray;
-  
   max-width: 1440px;
   height: 5px;
   margin-top: -48px;
@@ -226,6 +224,12 @@ input {
 
 textarea {
   border-radius: 8px;
+}
+
+
+.container {
+
+
 }
 
 /* REZEPT_DES_TAGES */
