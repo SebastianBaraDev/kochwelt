@@ -1,36 +1,115 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julian's Rezept</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julian's Rezept</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo_small.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/logo_small.png">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="basic.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./basic.css">
+  <link rel="stylesheet" href="./style/personally_rezept_style.css">
+
+  <script src="./javascript/rechner.js"></script>
 </head>
-<body>
-    <header>
-        <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
-        <nav>
-            <a href="./index.html"><ul>Startseite</ul></a>
-            <a href="./rezept_des_tages.html"><ul>Rezept des Tages</ul></a>
-            <a href="./kontakt.html"><ul>Kontakt</ul></a>
-            <a href="./impressum.html"><ul>Impressum</ul></a>
-        </nav>
-    </header>
 
-    <main>
+<body onload="calculate()">
+  <header>
+    <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
+    <nav>
+      <a href="./index.html">
+        <ul>Startseite</ul>
+      </a>
+      <a href="./rezept_des_tages.html">
+        <ul>Rezept des Tages</ul>
+      </a>
+      <a href="./kontakt.html">
+        <ul>Kontakt</ul>
+      </a>
+      <a href="./impressum.html">
+        <ul>Impressum</ul>
+      </a>
+    </nav>
+  </header>
 
-    </main>
+  <main>
+    <section>
+      <img src="./img/rote_linsensuppe_vegan.png" alt="Foto von einer rote Linsensuppe Vegan mit Zutaten">
+      <h1>Rote Linsensuppe Vegan</h1>
+    </section>
 
-    <footer>
-        <img src="./img/logo.png" class="footer_logo">
-        <div class="footer_links">
-            <a href="./impressum.html">Impressum</a> |
-            <a href="./datenschutz.html">Datenschutz</a>
-        </div>
-    </footer>
+    <section class="recipe_info_line">
+      <figure class="recipe_info">
+        <img src="./img/icons/clock-regular.svg" alt="time_icon" class="recipe_icons">
+        <figcaption>ca. 60 Minuten</figcaption>
+      </figure>
+      <figure class="recipe_info">
+        <img src="./img/icons/brain-solid.svg" alt="time_icon" class="recipe_icons">
+        <figcaption>mittel</figcaption>
+      </figure>
+      <figure class="recipe_info">
+        <img src="./img/icons/calendar-alt-regular.svg" alt="time_icon" class="recipe_icons">
+        <figcaption>13.12.2025</figcaption>
+      </figure>
+    </section>
+
+    <div id="divider"></div>
+
+    <form class="quantity">
+      <label for="Mengenangaben">Zutaten für:</label>
+      <input id="number" type="number" required min="1" max="20" value="1">
+      <button type="button" onclick="calculate()">Portionen</button>
+    </form>
+    <!-- Zutatenliste -->
+    <table id="table">
+
+    </table>
+
+    <!-- Zubereitung -->
+    <figure>
+      <figcaption>
+        <h3>Zubereitung</h3>
+        <p>
+        <ol>
+          <li>Zuerst wäschst du die 200 g Linsen in einem Sieb mit kaltem Wasser.</li>
+          <li>Dann schälst du 1 rote Zwiebel und die Knoblauchzehe und schneidest beides in kleine Würfel. Das Stück
+            Ingwer schälst du und reibst oder schneidest es fein. Die 2 Möhren schälen und in Würfel schneiden. Die 1
+            Limette auspressen.</li>
+          <li>Jetzt erhitzt du 2 EL Pflanzenöl in einem Topf und dünstest darin die Zwiebel- und Knoblauchwürfel sowie
+            die Möhrenwürfel und den Ingwer unter Rühren für 2 Minuten an. </li>
+          <li>Die gewaschenen, abgetropften Linsen, 2 TL Kurkuma, 1 TL Kreuzkümmel und ¼ TL Chilipulver einrühren und 2
+            Minuten unter Rühren mit anschwitzen, bis es duftet.</li>
+          <li>Dann gießt du 500 ml Gemüsebrühe und 400 g gehackte Tomaten dazu. Würze mit 1 Prise Salz und ½ TL Zucker.
+            Alles gut verrühren. Das Ganze lässt du aufkochen und bei kleiner Stufe 15 bis 20 Minuten mit Deckel
+            köcheln. Gelegentlich umrühren.</li>
+          <li>Nun gießt du 400 ml Kokosmilch dazu. Wenn die Suppe zu dick ist, noch etwas Wasser einrühren. Die
+            Linsensuppe nochmals erwärmen und nach Belieben mit Salz, gemahlenen Chili und 1 EL Limettensaft
+            abschmecken. </li>
+          <li>Ich wünsche dir einen guten Appetit!</li>
+        </ol>
+        </p>
+      </figcaption>
+    </figure>
+
+    <section>
+      <figure>
+        <h4>Rezept erstellt von <span>
+            <a href="https://emmikochteinfach.de/rote-linsensuppe-mit-kokosmilch/">Emmi,</a>
+        </h4></span>mit eine extra Zutat, die mein Vater mir gezeigt hat. Ich wünsche mir, euch schmeckt es genau so gut
+        wie mir. ;)
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <img src="./img/logo.png" class="footer_logo">
+    <div class="footer_links">
+      <a href="./impressum.html">Impressum</a> |
+      <a href="./datenschutz.html">Datenschutz</a>
+    </div>
+  </footer>
 </body>
+
 </html>
