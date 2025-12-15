@@ -1,5 +1,5 @@
-/* FONTS */
-@font-face {
+/* FONTS */ auskommentiert, wegen Fehlermeldungen
+/*@font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -9,15 +9,20 @@
   font-family: "Raleway";
   src: url("../fonts/Raleway-Bold.woff2") format("woff2");
   font-weight: 700;
-}
+}*/
 
 /* BODY */
 body {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: "Raleway", sans-serif;
   color: #222;
 }
-
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
 .bg_grey {
   background-color: #403B3B;
@@ -26,6 +31,7 @@ body {
 h1 {
   font-size: 48px;
   font-weight: 700;
+  font-family: "Raleway", sans-serif;
 }
 
 h2 {
@@ -62,21 +68,27 @@ button {
   cursor: pointer;
 }
 
+
 header {
   max-width: 1440px;
   height: 144px;
-  padding: 40px 160px 0 160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  margin: auto;
+  padding-left: 160px;
+  padding-right: 160px;
 }
+
 
 .header_logo {
   height: 120px;
   width: 400px;
 }
-
+.header_logo_mobile {
+  display: none;
+  height: 60px;
+}
 header nav a {
   text-decoration: none;
   color: #403B3B;
@@ -88,6 +100,7 @@ header nav a:hover {
   color: #008000;
   border-bottom: 5px solid #008000
 }
+
 
 nav {
   display: flex;
@@ -106,6 +119,7 @@ main {
   max-width: 1440px;
   padding: 40px 160px;
   margin: 0 auto;
+  flex: 1;
 }
 
 main a {
@@ -123,9 +137,11 @@ footer {
   align-items: center;
   max-width: 1440px;
   height: 144px;
-  padding: 40px 160px;
+  padding-left: 160px;
+  padding-right: 160px;
   background-color: #403B3B;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .footer_logo {
@@ -133,7 +149,11 @@ footer {
   width: 300px;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
-
+.footer_logo_small {
+  display: none;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  height: 60px;
+}
 footer a {
   text-decoration: none;
   color: white;
@@ -159,3 +179,4 @@ footer a:hover {
   width: auto;
   padding-bottom: 16px;
 }
+
