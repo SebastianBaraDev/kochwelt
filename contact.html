@@ -25,7 +25,7 @@
 <body>
   <header>
     <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
-    <a href="./index.html"><img src="./img/logo_small.png" class="header_logo_mobile"></a>
+    <a href="./index.html" class="header_logo_mobile"><img src="./img/logo_small.png" class="header_logo_mobile"></a>
 
     <nav>
       <a href="./index.html">
@@ -41,18 +41,16 @@
         <ul>Impressum</ul>
       </a>
     </nav>
-   
-    <!-- menu window -->
-    <menu class="dropdown">
-      
-      <button onmouseover="myFunction()" class="dropbtn">Menu</button>
-      <li id="myDropdown" class="dropdown-content">
-        <a href="./index.html">Startseite</a>
-        <a href="./rezept_des_tages.html">Rezept des Tages</a>
-        <a href="./contact.html">Kontakt</a>
-        <a href="./impressum.html">Impressum</a>
-      </li>
-    </menu>
+    <!-- Mobile Menu -->
+  <div class="nav-mobile">
+    <button class="burger" onclick="toggleMenu()">☰</button>
+    <ul id="mobileMenu" class="mobile-menu">
+      <li><a href="./index.html">Startseite</a></li>
+      <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+      <li><a href="./kontakt.html">Kontakt</a></li>
+      <li><a href="./impressum.html">Impressum</a></li>
+    </ul>
+  </div>
 
   </header>
 
