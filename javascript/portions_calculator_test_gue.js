@@ -49,6 +49,13 @@ return amount1
 /*Funktionen*/
 
 function calcrecipe(){
+    if (document.getElementById("portions").value > 20) {
+        return "invalid"
+    }
+    else if(document.getElementById("portions").value < 1){
+        return "invalid"
+    }
+    else {
     calc_ingred_1()
     value_ingred_1()
     calc_ingred_2()
@@ -65,7 +72,7 @@ function calcrecipe(){
     value_ingred_7()
      calc_ingred_8()
     value_ingred_8()
-}
+}}
 
 
 
