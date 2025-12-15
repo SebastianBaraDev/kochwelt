@@ -9,6 +9,22 @@
     nav {
         display: none;
     }
+    .nav-mobile {
+    display: block;
+    position: relative;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+  }
+
+  .mobile-menu.show {
+    display: block;
+  }
     
     main {
         padding: 24px;
@@ -39,6 +55,7 @@
     }
     .header_logo_mobile {
         display: block;
+        margin-right: auto;
     }
     
     .footer_logo {
