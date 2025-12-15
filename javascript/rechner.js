@@ -3,8 +3,17 @@ const rezeptList = [
   "50g rote Linen",
   "50g Möhren",
   "100g Kokosmilch",
-  "5g Ingwer",
-  "2g Kurkuma"
+  "1 kleine Zwiebel",
+  "1 kleine Knoblauchzehe",
+  "5g Ingwer, frisch",
+  "2g Kurkuma, frisch",
+  "1 TL Öl",
+  "1 viertel TL Kreuzkümmel, gemahlen",
+  "1 viertel Chili",
+  "1 halben TL Limettensaft zum Abschmecken",
+  "1 viertel Bunt Petersilie",
+  "1 priese Salz",
+  "1 getrocknete Abrikosen, Geheimzutat von meinem Vater"
 ]
 
 
@@ -24,7 +33,6 @@ function calculate() {
     //push in HTML
     table.innerHTML += `<tr><td>${newRezeptList[i]}</td></tr>`
   }
-  document.querySelector('#tr:nth-child').style.color = ' #eeeeee'
   console.log(newRezeptList)
 }
 
