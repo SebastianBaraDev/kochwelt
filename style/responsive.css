@@ -19,6 +19,18 @@
 }
 
 @media (max-width: 768px){
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5{
+        font-size: 18px;
+    }
     header {
         justify-content: flex-start;
     }
