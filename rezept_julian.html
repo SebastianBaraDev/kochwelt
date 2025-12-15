@@ -8,37 +8,115 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./img/logo_small.png">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/basic.css">
-    <link rel="stylesheet" href="./style/responsive.css">
-    <link rel="stylesheet" href="./style/menu_window.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/basic.css">
+  <link rel="stylesheet" href="./style/responsive.css">
+  <link rel="stylesheet" href="./style/menu_window.css">
+  <link rel="stylesheet" href="./style/personally_rezept_style.css">
+
+  <script src="./javascript/rechner.js"></script>
 </head>
-<body>
-    <header>
-        <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
-        <nav>
-            <a href="./index.html"><ul>Startseite</ul></a>
-            <a href="./rezept_des_tages.html"><ul>Rezept des Tages</ul></a>
-            <a href="./kontakt.html"><ul>Kontakt</ul></a>
-            <a href="./impressum.html"><ul>Impressum</ul></a>
-        </nav>
-    </header>
 
-    <main>
+<body onload="calculate()">
+  <header>
+    <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
+    <nav>
+      <a href="./index.html">
+        <ul>Startseite</ul>
+      </a>
+      <a href="./rezept_des_tages.html">
+        <ul>Rezept des Tages</ul>
+      </a>
+      <a href="./contact.html">
+        <ul>Kontakt</ul>
+      </a>
+      <a href="./impressum.html">
+        <ul>Impressum</ul>
+      </a>
+    </nav>
+  </header>
 
-    </main>
+  <main>
+    <section>
+      <img src="./img/rote_linsensuppe_vegan.png" alt="Foto von einer rote Linsensuppe Vegan mit Zutaten">
+      <h1>Rote Linsensuppe Vegan</h1>
+    </section>
 
-    <footer>
-        <img src="./img/logo.png" class="footer_logo">
-        <div class="footer_links">
-            <a href="./impressum.html">Impressum</a> |
-            <a href="./datenschutz.html">Datenschutz</a>
-        </div>
-    </footer>
+    <section class="recipe_info_line">
+      <figure class="recipe_info">
+        <img src="./img/icons/clock-regular.svg" alt="time_icon" class="recipe_icons">
+        <figcaption>ca. 60 Minuten</figcaption>
+      </figure>
+      <figure class="recipe_info">
+        <img src="./img/icons/brain-solid.svg" alt="time_icon" class="recipe_icons">
+        <figcaption>mittel</figcaption>
+      </figure>
+      <figure class="recipe_info">
+        <img src="./img/icons/calendar-alt-regular.svg" alt="time_icon" class="recipe_icons">
+        <figcaption>13.12.2025</figcaption>
+      </figure>
+    </section>
+
+    <div id="divider"></div>
+
+    <form class="quantity">
+      <label for="Mengenangaben">Zutaten für:</label>
+      <input id="number" type="number" required min="1" max="20" value="1">
+      <button type="button" onclick="calculate()">Portionen</button>
+    </form>
+    <!-- Zutatenliste -->
+    <table id="table">
+      <!-- Hier wird eine Zutatenliste mit kalkulierten Mengenangaben generiert -->
+    </table>
+
+    <!-- Zubereitung -->
+    <figure>
+      <figcaption>
+        <h3>Zubereitung</h3>
+        <p>
+        <ol>
+          <li>Zuerst wäschst du die die Linsen in einem Sieb mit kaltem Wasser.</li>
+          <li>Dann schälst du die Zwiebel und die Knoblauchzehe und schneidest beides in kleine Würfel. Das Stück
+            Ingwer schälst du und reibst oder schneidest es fein. Die Möhren schälen und in Würfel schneiden. Und die
+            Limette auspressen.</li>
+          <li>Jetzt erhitzt du das Pflanzenöl in einem Topf und dünstest darin die Zwiebel- und Knoblauchwürfel sowie
+            die Möhrenwürfel und den Ingwer unter Rühren für 2 Minuten an. </li>
+          <li>Die gewaschenen, abgetropften Linsen, Kurkuma, Kreuzkümmel und Chilipulver einrühren und 2
+            Minuten unter Rühren mit anschwitzen, bis es duftet.</li>
+          <li>Dann gießt du die Gemüsebrühe und die gehackte Tomaten dazu. Würze mit 1 Prise Salz.
+            Alles gut verrühren. Das Ganze lässt du aufkochen und bei kleiner Stufe 15 bis 20 Minuten mit Deckel
+            köcheln. Gelegentlich umrühren.</li>
+          <li>Nun gießt du die Kokosmilch und die Aprikosen dazu. Wenn die Suppe zu dick ist, noch etwas Wasser einrühren. Die
+            Linsensuppe nochmals erwärmen und nach Belieben mit Salz, gemahlenen Chili, Limettensaft und Petersilie
+            abschmecken. </li>
+          <li>Ich wünsche dir einen guten Appetit!</li>
+        </ol>
+        </p>
+      </figcaption>
+    </figure>
+
+    <section>
+      <figure>
+        <h4>Rezept erstellt von <span>
+            <a href="https://emmikochteinfach.de/rote-linsensuppe-mit-kokosmilch/">Emmi,</a>
+        </h4></span>mit eine extra Zutat, die mein Vater mir gezeigt hat. Ich wünsche mir, euch schmeckt es genau so gut
+        wie mir. ;)
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <img src="./img/logo.png" class="footer_logo">
+    <div class="footer_links">
+      <a href="./impressum.html">Impressum</a> |
+      <a href="./datenschutz.html">Datenschutz</a>
+    </div>
+  </footer>
 </body>
 
 </html>
