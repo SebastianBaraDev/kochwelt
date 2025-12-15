@@ -13,8 +13,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
 
@@ -22,6 +21,8 @@
     <link rel="stylesheet" href="./style/basic.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
     <link rel="stylesheet" href="./style/menu_window.css" />
+
+    <script src="./javascript/menu_window.js"></script>
   </head>
 
   <body>
@@ -29,9 +30,9 @@
       <a href="./index.html"
         ><img src="./img/logo.png" class="header_logo"
       /></a>
-      <!--<a href="./index.html"
+      <a href="./index.html" class="header_logo_mobile"
         ><img src="./img/logo_small.png" class="header_logo_mobile"
-      /></a> -->
+      /></a>
       <nav>
         <a href="./index.html">
           <ul>
@@ -54,6 +55,16 @@
           </ul>
         </a>
       </nav>
+      <!-- Mobile Menu -->
+  <div class="nav-mobile">
+    <button class="burger" onclick="toggleMenu()">☰</button>
+    <ul id="mobileMenu" class="mobile-menu">
+      <li><a href="./index.html">Startseite</a></li>
+      <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+      <li><a href="./kontakt.html">Kontakt</a></li>
+      <li><a href="./impressum.html">Impressum</a></li>
+    </ul>
+  </div>
     </header>
 
     <main>
