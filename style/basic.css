@@ -1,5 +1,5 @@
-/* FONTS */
-@font-face {
+/* FONTS */ auskommentiert, wegen Fehlermeldungen
+/*@font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -9,7 +9,7 @@
   font-family: "Raleway";
   src: url("../fonts/Raleway-Bold.woff2") format("woff2");
   font-weight: 700;
-}
+}*/
 
 /* BODY */
 body {
@@ -26,6 +26,7 @@ body {
 h1 {
   font-size: 48px;
   font-weight: 700;
+  font-family: "Raleway", sans-serif;
 }
 
 h2 {
@@ -78,6 +79,10 @@ header {
 .header_logo {
   height: 120px;
   width: 400px;
+}
+.header_logo_mobile {
+  display: none;
+  height: 60px;
 }
 header nav a {
   text-decoration: none;
@@ -138,6 +143,11 @@ footer {
   height: 90px;
   width: 300px;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+.footer_logo_small {
+  display: none;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  height: 60px;
 }
 footer a {
   text-decoration: none;
