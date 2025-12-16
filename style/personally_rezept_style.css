@@ -39,7 +39,7 @@ section img {
   margin: 0;
   border-radius: 0;
   height: 37px;
-  width: 111px;
+  width: 115px;
 }
 
 .quantity button {
@@ -55,4 +55,19 @@ table {
 tbody:nth-child(even) {
   background-color: #eeeeee;
   border-radius: 8px;
+}
+
+.emmi {
+  color: rgb(97, 199, 214);
+}
+
+main figure h5 {
+  font-size: 16px;
+}
+
+.julian_hergert_Profilbild {
+  width: 150px;
+  height: 200px;
+  background-position: center;
+  margin-top: 8px;
 }
