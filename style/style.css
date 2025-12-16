@@ -49,8 +49,8 @@
   background-color: gray;
   max-width: 1440px;
   height: 5px;
-  margin-top: -48px;
   margin-bottom: 58px;
+  width: 100vw;
 }
 
 
@@ -84,8 +84,8 @@
 }
 
 .card img {
-  width: 220px;
-  height: 160px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -102,15 +102,15 @@
   grid-template-columns: 1fr 350px;
   gap: 40px;
   align-items: center;
+  text-align: left;
 }
 .howto-grid p {
   margin-top: 0;   
-  margin-bottom: 180px; 
 }
 
 .howto-grid img {
   width: 250px;
-  height: 280px;
+  height: 250px;
   border-radius: 10px;
 }
 
@@ -269,8 +269,14 @@ input {
   line-height: 28px;
 }
 
+input:invalid {
+  border: 2px solid #008000;
+  font-weight: bolder;
+}
+
 textarea {
   border-radius: 8px;
+  border: 2px solid #008000;
 }
 
 
@@ -314,7 +320,3 @@ textarea {
 }
 */
 
-input:invalid {
-  border: 2px solid red;
-  font-weight: bolder;
-}
