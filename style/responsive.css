@@ -19,15 +19,13 @@
   footer {
     padding: 24px;
   }
-}
-    nav {
+  nav {
         display: none;
-    }
-    .nav-mobile {
+  }
+  .nav-mobile {
     display: block;
     position: relative;
   }
-
   .mobile-menu {
     display: none;
     position: absolute;
@@ -35,17 +33,15 @@
     top: 100%;
     background: white;
   }
-
   .mobile-menu.show {
     display: block;
+  } 
+  main {
+        padding: 24px;
   }
-    
-    main {
+  footer {
         padding: 24px;
-    }
-    footer {
-        padding: 24px;
-    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -75,6 +71,7 @@
 
   .header_logo_mobile {
     display: block;
+    margin-right: auto;
   }
 
   .footer_logo {
