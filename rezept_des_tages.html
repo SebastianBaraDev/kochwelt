@@ -12,26 +12,49 @@
       href="./img/logo_small.png"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/basic.css">
-    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/basic.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
 
     <script src="./javascript/menu_window.js"></script>
   </head>
   <body>
     <header>
-        <div class="header-inner">
-        <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
-        <a href="./index.html" class="header_logo_mobile"><img src="./img/logo_small.png" class="header_logo_mobile"></a>
+      <div class="header-inner">
+        <a href="./index.html"
+          ><img src="./img/logo.png" class="header_logo"
+        /></a>
+        <a href="./index.html" class="header_logo_mobile"
+          ><img src="./img/logo_small.png" class="header_logo_mobile"
+        /></a>
         <nav>
-            <a href="./index.html"><ul>Startseite</ul></a>
-            <a href="./rezept_des_tages.html"><ul>Rezept des Tages</ul></a>
-            <a href="./contact.html"><ul>Kontakt</ul></a>
-            <a href="./impressum.html"><ul>Impressum</ul></a>
+          <a href="./index.html"
+            ><ul>
+              Startseite
+            </ul></a
+          >
+          <a href="./rezept_des_tages.html"
+            ><ul>
+              Rezept des Tages
+            </ul></a
+          >
+          <a href="./contact.html"
+            ><ul>
+              Kontakt
+            </ul></a
+          >
+          <a href="./impressum.html"
+            ><ul>
+              Impressum
+            </ul></a
+          >
         </nav>
         <!-- Mobile Menu -->
   <div class="nav-mobile">
@@ -44,11 +67,15 @@
     </ul>
   </div>
         </div>
-    <div class="separator"></div>
+      </div>
+      <div class="separator"></div>
     </header>
 
     <main>
-      <h3>Rezept des Tages – Gebratener Lachs mit Salat aus Zucchini und Grapefruit</h3>
+      <h3>
+        Rezept des Tages – Gebratener Lachs mit Salat aus Zucchini und
+        Grapefruit
+      </h3>
 
       <img src="/img/gebratener Lachs.jpg" class="full-img" />
 
@@ -79,52 +106,119 @@
         </div>
       </div>
 
-      <div class="recipe-box">
-        <div class="left-box">
-          <h3>Portionen</h3>
-          <div class="portion-control">
-            <button id="decrease">-</button>
-            <span id="portion-count">1</span>
-            <button id="increase">+</button>
-            <span>Personen</span>
-          </div>
+      <div class="recipe_ingredients_header">
+        <span>Zutaten für</span>
+        <input
+          type="number"
+          min="1"
+          max="20"
+          value="1"
+          id="portions"
+          class="recipe_input_form"
+        />
+        <button onclick="calcrecipe()">Portionen</button>
+      </div>
 
-          <h3>Zutaten</h3>
-          <ul id="ingredients">
-            <li data-base="125">Lachsfilet, tiefgefroren</li>
-            <li data-base="0.5">0.5 St. Grapefruit</li>
-            <li data-base="0.25">0.25 St. Schalotten</li>
-            <li data-base="0.5">0.5 St. Zucchini</li>
-            <li data-base="1.25">1.25 EL Olivenöl</li>
-            <li data-base="0.25">0.25 TL Senf</li>
-            <li data-base="#">Prise Salz</li>
-            <li data-base="#">Pfefer, schwarz gemahlen</li>
-            <li data-base="0.25">0.25 St. Bio Zitrone</li>
-          </ul>
-        </div>
+      <table class="recipe_ingredients_table">
+        <tr>
+          <th style="width: 1440px"></th>
+        </tr>
 
-        <div class="right-box">
-          <h3>Zubereitung</h3>
-          <ol>
-            <li>Lachs am besten über Nacht im Kühlschrank auftauen lassen. Grapefruits mit einem Messer so dick schälen, dass auch die weiße Innenhaut mit entfernt wird. Filets zwischen den Trennwänden herausschneiden, dabei den Saft auffangen.</li>
-            <li>Schalotte halbieren, schälen und würfeln. Zucchini waschen, Enden entfernen und in dünne Scheiben schneiden.</li>
-            <li>In einer Pfanne 2 EL Öl auf mittlerer bis hoher Stufe erhitzen und die Zucchini darin ca. 1–2 Min. anbraten. Anschließend herausnehmen.</li>
-            <li>Erneut 1 EL Öl in der Pfanne erhitzen und die Schalotten darin für ca. 2 Min. glasig anbraten. In einer Schüssel mit 2 EL Öl, Grapefruitsaft, Senf, Salz und Pfeffer zu einem Dressing verrühren. Zucchini und Grapefruit vorsichtig unterheben.</li>
-            <li>Salat mit Salz und Pfeffer abschmecken. Gebratener Lachs mit Salat aus Zucchini und Grapefruit Teller anrichten und servieren.</li>
-            <li>Guten Appetit!</li>
-          </ol>
+        <tr class="tr_grey">
+          <td id="ingred_1">125g Lachsfilet, tiefgefroren</td>
+        </tr>
+        <tr>
+          <td id="ingred_2">0.5 St. Grapefruit</td>
+        </tr>
+        <tr class="tr_grey">
+          <td id="ingred_3">0.25 St. Schalotten</td>
+        </tr>
+        <tr>
+          <td id="ingred_4">0.5 St. Zucchini</td>
+        </tr>
+        <tr class="tr_grey">
+          <td id="ingred_5">1.5 El Olivenöl</td>
+        </tr>
+        <tr>
+          <td id="ingred_6">0.25 Tl Senf</td>
+        </tr>
+        <tr class="tr_grey">
+          <td id="ingred_7">Prise Salz</td>
+        </tr>
+        <tr>
+          <td id="ingred_8">Pfeffer, schwarz gemahlen</td>
+        </tr>
+        <tr class="tr_grey">
+          <td id="ingred_9">0.25 St. Bio Zitrone</td>
+        </tr>
+      </table>
+
+      <script src="./javascript/portions-calculator.js"></script>
+
+      <h3>Zubereitung</h3>
+      <div class="recipe_info_line">
+        <div class="recipe_info">
+          <img
+            src="./img/icons/clock-regular.svg"
+            alt="time_icon"
+            class="recipe_icons"
+          />
+          <span><strong>5 Std.</strong> Gesamtzeit</span>
         </div>
+        <div class="recipe_info">
+          <img
+            src="./img/icons/clock-regular.svg"
+            alt="time_icon"
+            class="recipe_icons"
+          />
+          <span><strong>35 Min.</strong> Arbeitszeit</span>
+        </div>
+      </div>
+      <ol type="1">
+        <li>
+          Lachs am besten über Nacht im Kühlschrank auftauen lassen. Grapefruits
+          mit einem Messer so dick schälen, dass auch die weiße Innenhaut mit
+          entfernt wird. Filets zwischen den Trennwänden herausschneiden, dabei
+          den Saft auffangen.
+        </li>
+        <li>
+          Schalotte halbieren, schälen und würfeln. Zucchini waschen, Enden
+          entfernen und in dünne Scheiben schneiden.
+        </li>
+        <li>
+          In einer Pfanne 2 EL Öl auf mittlerer bis hoher Stufe erhitzen und die
+          Zucchini darin ca. 1–2 Min. anbraten. Anschließend herausnehmen.
+        </li>
+        <li>
+          Erneut 1 EL Öl in der Pfanne erhitzen und die Schalotten darin für ca.
+          2 Min. glasig anbraten. In einer Schüssel mit 2 EL Öl, Grapefruitsaft,
+          Senf, Salz und Pfeffer zu einem Dressing verrühren. Zucchini und
+          Grapefruit vorsichtig unterheben.
+        </li>
+        <li>
+          Salat mit Salz und Pfeffer abschmecken. Gebratener Lachs mit Salat aus
+          Zucchini und Grapefruit Teller anrichten und servieren.
+        </li>
+        <li>Guten Appetit</li>
+      </ol>
+
+      <h5>Rezept erstellt von</h5>
+
+      <div class="recipe_profil">
+        <img src="/img/Shokir.jpg" alt="Profilbild des Autors" />
+        <p style="font-size: 40px">Shokir</p>
+        <p></p>
       </div>
     </main>
 
     <footer>
       <div class="footer-inner">
-      <img src="./img/logo.png" class="footer_logo" />
-      <img src="./img/logo_small.png" class="footer_logo_small">
-      <div class="footer_links">
-        <a href="./impressum.html">Impressum</a>
-        <a href="./datenschutz.html">Datenschutz</a>
-      </div>
+        <img src="./img/logo.png" class="footer_logo" />
+        <img src="./img/logo_small.png" class="footer_logo_small" />
+        <div class="footer_links">
+          <a href="./impressum.html">Impressum</a>
+          <a href="./datenschutz.html">Datenschutz</a>
+        </div>
       </div>
     </footer>
   </body>
