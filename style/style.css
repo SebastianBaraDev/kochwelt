@@ -166,6 +166,7 @@
   height: 20px;
   width: 20px;
   vertical-align: middle;
+  border-radius: 0;
 }
 
 table {
@@ -269,10 +270,9 @@ input {
   line-height: 28px;
 }
 
-input:invalid {
-  border: 2px solid #008000;
-  font-weight: bolder;
-}
+input:invalid { background: hsl(5,30%,80%)}
+input:valid   { border-color: blue}
+
 
 textarea {
   border-radius: 8px;

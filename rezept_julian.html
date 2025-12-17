@@ -20,37 +20,45 @@
   <link rel="stylesheet" href="./style/personally_rezept_style.css">
 
   <script src="./javascript/rechner.js"></script>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/basic.css">
-    <link rel="stylesheet" href="./style/responsive.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/basic.css">
+  <link rel="stylesheet" href="./style/responsive.css">
 
-    <script src="./javascript/menu_window.js"></script>
+  <script src="./javascript/menu_window.js"></script>
 </head>
 
 <body onload="calculate()">
-    <header>
-        <div class="header-inner">
-        <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
-        <a href="./index.html" class="header_logo_mobile"><img src="./img/logo_small.png" class="header_logo_mobile"></a>
-        <nav>
-            <a href="./index.html"><ul>Startseite</ul></a>
-            <a href="./rezept_des_tages.html"><ul>Rezept des Tages</ul></a>
-            <a href="./contact.html"><ul>Kontakt</ul></a>
-            <a href="./impressum.html"><ul>Impressum</ul></a>
-        </nav>
-        <!-- Mobile Menu -->
-  <div class="nav-mobile">
-    <button class="burger" onclick="toggleMenu()">☰</button>
-    <ul id="mobileMenu" class="mobile-menu">
-      <li><a href="./index.html">Startseite</a></li>
-      <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
-      <li><a href="./kontakt.html">Kontakt</a></li>
-      <li><a href="./impressum.html">Impressum</a></li>
-    </ul>
-  </div>
-        </div>
+  <header>
+    <div class="header-inner">
+      <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
+      <a href="./index.html" class="header_logo_mobile"><img src="./img/logo_small.png" class="header_logo_mobile"></a>
+      <nav>
+        <a href="./index.html">
+          <ul>Startseite</ul>
+        </a>
+        <a href="./rezept_des_tages.html">
+          <ul>Rezept des Tages</ul>
+        </a>
+        <a href="./contact.html">
+          <ul>Kontakt</ul>
+        </a>
+        <a href="./impressum.html">
+          <ul>Impressum</ul>
+        </a>
+      </nav>
+      <!-- Mobile Menu -->
+      <div class="nav-mobile">
+        <button class="burger" onclick="toggleMenu()">☰</button>
+        <ul id="mobileMenu" class="mobile-menu">
+          <li><a href="./index.html">Startseite</a></li>
+          <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+          <li><a href="./contact.html">Kontakt</a></li>
+          <li><a href="./impressum.html">Impressum</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="separator"></div>
-    </header>
+  </header>
 
   <main>
     <section>
@@ -61,7 +69,7 @@
     <section class="recipe_info_line">
       <figure class="recipe_info">
         <img src="./img/icons/clock-regular.svg" alt="time_icon" class="recipe_icons">
-        <figcaption>ca. 60 Minuten</figcaption>
+        <figcaption>ca. 25min.</figcaption>
       </figure>
       <figure class="recipe_info">
         <img src="./img/icons/brain-solid.svg" alt="time_icon" class="recipe_icons">
@@ -77,7 +85,7 @@
 
     <form class="quantity">
       <label for="Mengenangaben">Zutaten für:</label>
-      <input id="number" type="number" required min="1" max="20" value="1">
+      <input id="number" type="number" required min="1" max="20" value="4">
       <button type="button" onclick="calculate()">Portionen</button>
     </form>
     <!-- Zutatenliste -->
@@ -102,7 +110,8 @@
           <li>Dann gießt du die Gemüsebrühe und die gehackte Tomaten dazu. Würze mit 1 Prise Salz.
             Alles gut verrühren. Das Ganze lässt du aufkochen und bei kleiner Stufe 15 bis 20 Minuten mit Deckel
             köcheln. Gelegentlich umrühren.</li>
-          <li>Nun gießt du die Kokosmilch und die Aprikosen dazu. Wenn die Suppe zu dick ist, noch etwas Wasser einrühren. Die
+          <li>Nun gießt du die Kokosmilch und die Aprikosen dazu. Wenn die Suppe zu dick ist, noch etwas Wasser
+            einrühren. Die
             Linsensuppe nochmals erwärmen und nach Belieben mit Salz, gemahlenen Chili, Limettensaft und Petersilie
             abschmecken. </li>
           <li>Ich wünsche dir einen guten Appetit!</li>
@@ -113,24 +122,33 @@
 
     <section>
       <figure>
-        <h4>Rezept erstellt von <span>
-            <a href="https://emmikochteinfach.de/rote-linsensuppe-mit-kokosmilch/">Emmi,</a>
-        </h4></span>mit einer extra Zutat, die mein Vater mir gezeigt hat. Ich wünsche mir, euch schmeckt es genau so gut
-        wie mir. ;)
+        <h4>Hauptrezept erstellt von 
+          <span>
+            <a class="emmi" href="https://emmikochteinfach.de/rote-linsensuppe-mit-kokosmilch/">Emmi,</a>
+          </span>
+        </h4>
+        <span>
+          mit einer extra Zutat, die mein Vater mir gezeigt hat. Ich wünsche mir, euch schmeckt es genau so gut wie mir. ;)
+        </span><br>
+        <br>
+        <h5>
+          editiert von Julian Hergert
+        </h5>
+        <img class="julian_hergert_Profilbild" src="./img/julian Hergert.jpg" alt="Bild von Julian Hergert">
       </figure>
     </section>
   </main>
 
-    <footer>
-      <div class="footer-inner">
+  <footer>
+    <div class="footer-inner">
       <img src="./img/logo.png" class="footer_logo" />
       <img src="./img/logo_small.png" class="footer_logo_small">
       <div class="footer_links">
         <a href="./impressum.html">Impressum</a>
         <a href="./datenschutz.html">Datenschutz</a>
       </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 </body>
 
 </html>

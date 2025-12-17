@@ -225,7 +225,7 @@ function calc_ingred_8(){
     console.log("Button gedrückt")
     const portions = document.getElementById("portions").value;
     console.log(portions)
-    let amount_8 = (backkakao/4*portions) + "g" + " " + "Backkakao (ungesüßt)";
+    let amount_8 = (backkakao/4*portions) + "g" + " " + "Backkakao (ungesüsst)";
     console.log(amount_8)
     return amount_8;
 }
