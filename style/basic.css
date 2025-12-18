@@ -23,6 +23,7 @@ h1 {
 
 h2 {
   font-size: 32px;
+  margin-block-start:0;
 }
 
 h3 {
@@ -40,6 +41,8 @@ h5 {
   margin-block-start: 0;
   margin-block-end: 0;
 }
+
+
 
 .recipe_img {
   height: 352px;
@@ -167,5 +170,7 @@ footer a:hover {
   align-items: center;
   height: 144px;
 }
+
+
 
 

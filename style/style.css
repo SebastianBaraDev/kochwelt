@@ -63,7 +63,7 @@
 }
 
 .recipe_suggestions h2 {
-  margin-bottom: 10px; 
+  margin-bottom: 40px; 
 }
 
 
@@ -315,12 +315,9 @@ textarea {
   margin-top: 40px;
 }
 
-/*Visualisierung Tabelle zum Bearbeiten*/
-/*td {
-  padding: 8px; 
-  text-align: left;
-  border: 1px solid black;
-
+.rezeptbutton{
+margin-top: 170px;
+font-weight: 200;
+width: 230px;
+height: 50px;
 }
-*/
-
