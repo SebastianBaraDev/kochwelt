@@ -63,92 +63,77 @@
         </div>
     </div> 
 
-    <div id="divider"></div>
-
     <div class="recipe_ingredients_header">
         <span>Zutaten für</span> 
-        <input class="recipe_input_form"> 
-        <button>Portionen</button>
+        <input type ="number" min="1" max="20" value= "4" id="portions" class="recipe_input_form" required>
+        <button onclick="calcrecipe()" id="calcbutton">Portionen</button>
     </div><br>
 
-     <table class="recipe_ingredients_table">   
-        <tr>
-            <th>Menge</th>
-            <th>Einh.</th>
-            <th>Zutaten</th>
-        </tr>
-        
-        <tr class="tr_grey">
-            <td>1</td>
-            <td>Stück</td>
-            <td>Rinderroulade(n)</td>
-        </tr>
-        <tr>
-            <td>0,5</td>
-            <td>Stück</td>
-            <td>Zwiebel(n)</td>
-        </tr>
-        <tr class="tr_grey">
-            <td>0,5</td>
-            <td>Stück</td>
-            <td>Gewürzgurke(n)</td>
-        </tr>
-        <tr>
-            <td>0,5</td>
-            <td>EL</td>
-            <td>Senf, mittelscharf</td>
-        </tr>
-        <tr class="tr_grey">
-            <td>1,5</td>
-            <td>Scheibe/n</td>
-            <td>Frühstücksspeck</td>
-        </tr>
-        <tr>
-            <td>0,25</td>
-            <td>EL</td>
-            <td>Butterschmalz</td>
-        </tr>
-        <tr class="tr_grey">
-            <td>20</td>
-            <td>g</td>
-            <td>Knollensellerie</td>
-        </tr>
-        <tr>
-            <td>0,25</td>
-            <td>Stück</td>
-            <td>Möhre(n)</td>
-        </tr>
-        <tr class="tr_grey">
-            <td>0,125</td>
-            <td>Stange(n)</td>
-            <td>Lauch</td>
-        </tr>
-        <tr>
-            <td>45</td>
-            <td>ml</td>
-            <td>Rotwein</td>
-        </tr>
-        <tr class="tr_grey">
-            <td></td>
-            <td></td>
-            <td>Salz und Pfeffer</td>
-        </tr>
-        <tr>
-            <td>60</td>
-            <td>ml</td>
-            <td>Rinderfond</td>
-        </tr>
-        <tr class="tr_grey">
-            <td>0,25</td>
-            <td>TL</td>
-            <td>Speisestärke</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>ml</td>
-            <td>Gurkenflüssigkeit</td>
-        </tr>
-    </table>
+     <table class="recipe_ingredients_table">
+            <tr>
+                <th style="width:1440px"></th>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_1">1 Rinderrouladen</td>
+            </tr>
+
+            <tr>
+                <td id="ingred_2">0,5 Zwiebel(n)</td>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_3">0,5 Gewürzgurke(n)</td>
+            </tr>
+
+            <tr>
+                <td id="ingred_4">0,5 EL Senf, mittelscharf</td>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_5">1,5 Scheiben Frühstücksspeck
+                </td>
+            </tr>
+
+            <tr>
+                <td id="ingred_6">0,25 EL Butterschmalz</td>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_7">20 g Knollensellerie</td>
+            </tr>
+
+            <tr>
+                <td id="ingred_8">0,25 Möhre(n)</td>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_9">0,125 Stange(n) Lauch</td>
+            </tr>
+
+            <tr>
+                <td id="ingred_10">45 ml Rotwein</td>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_11">60 ml Rinderfond</td>
+            </tr>
+
+            <tr>
+                <td id="ingred_12">0,25 TL Speisestärke</td>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_13">10 ml Gurkenflüssigkeit</td>
+            </tr>
+
+            <tr>
+                <td>Salz und Pfeffer nach Geschmack</td>
+            </tr>
+
+        </table>
+
+     <script src="./javascript/portions-calculator.js"></script>
 
     <h3>Zubereitung</h3>
     <div class="recipe_info_line">
