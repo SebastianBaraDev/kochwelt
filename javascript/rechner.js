@@ -18,6 +18,11 @@ const rezeptList = [
 
 
 function calculate() {
+  let valueFromInput = document.getElementById('number').value
+  // Validierung: nur Zahlen von 1–20
+  if (isNaN(valueFromInput) || valueFromInput < 1) valueFromInput = 1;
+  if (valueFromInput > 20) valueFromInput = 20;
+  // 
   const newRezeptList = []
   let result
   let table = document.getElementById('table')
@@ -25,7 +30,7 @@ function calculate() {
   for (let i = 0; i < rezeptList.length; i++) {
     //calculate int in string
     let number = parseInt(rezeptList[i])
-    result = number * document.getElementById('number').value
+    result = number * valueFromInput
     //remove int from string
     let text = rezeptList[i].replace(/[0-9]/g, "")
     //and creat a new rezeptlist
