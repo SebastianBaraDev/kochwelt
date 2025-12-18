@@ -242,11 +242,17 @@ li {
 .contact_formular {
   display: flex;
   justify-content: center;
+  background-color: #f2f2f2;
   margin-top: 80px;
+  width: 100%;
+}
+.contact_layout {
+  display: flex;
+  justify-content: center;
+  
 }
 
 form {
-  background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   flex-direction: column;
