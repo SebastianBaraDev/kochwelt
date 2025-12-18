@@ -22,16 +22,19 @@
 <body>
 
     <header>
-        <div class="header-inner">
-        <a href="./index.html"><img src="./img/logo.png" class="header_logo"></a>
-        <a href="./index.html" class="header_logo_mobile"><img src="./img/logo_small.png" class="header_logo_mobile"></a>
-        <nav>
-            <a href="./index.html"><ul>Startseite</ul></a>
-            <a href="./rezept_des_tages.html"><ul>Rezept des Tages</ul></a>
-            <a href="./contact.html"><ul>Kontakt</ul></a>
-            <a href="./impressum.html"><ul>Impressum</ul></a>
-        </nav>
-        <!-- Mobile Menu -->
+      <div class="wrapper_container">
+      <div class="header_layout">
+      <a href="./index.html"><img src="./img/logo.png" class="header_logo"/></a>
+      <a href="./index.html" class="header_logo_mobile"><img src="./img/logo_small.png" class="header_logo_mobile"/></a>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Startseite</a></li>
+          <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+          <li><a href="./contact.html">Kontakt</a></li>
+          <li><a href="./impressum.html">Impressum</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Menu -->
   <div class="nav-mobile">
     <button class="burger" onclick="toggleMenu()">☰</button>
     <ul id="mobileMenu" class="mobile-menu">
@@ -41,11 +44,12 @@
       <li><a href="./impressum.html">Impressum</a></li>
     </ul>
   </div>
-        </div>
-    <div class="separator"></div>
+      </div>
+      </div>
     </header>
     
     <main>
+        <div class="wrapper_container">
         <h3>Kaiserschmarren nach Omas Art</h3>
         <div class="recipe_image_kaiserschmarren">
         </div>
@@ -149,10 +153,12 @@
             <p style="font-size: 40px;">Guenther
             <p>
         </div>
+        </div>
     </main>
 
     <footer>
-      <div class="footer-inner">
+        <div class="wrapper_container">
+      <div class="footer_layout">
       <img src="./img/logo.png" class="footer_logo" />
       <img src="./img/logo_small.png" class="footer_logo_small">
       <div class="footer_links">
@@ -160,6 +166,7 @@
         <a href="./datenschutz.html">Datenschutz</a>
       </div>
       </div>
+        </div>
     </footer>
 
 </body>
