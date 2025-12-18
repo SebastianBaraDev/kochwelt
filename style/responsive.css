@@ -1,23 +1,13 @@
 @media (max-width: 1280px) {
-  .header-inner {
-    padding: 24px 24px 0 24px;
-  }
+  .wrapper_container {
+  max-width: 1440px;
+  padding: 0 24px;
+  width: 100%;
+}
 
   .header_logo {
     height: 90px;
     width: 300px;
-  }
-
-  nav {
-    display: none;
-  }
-
-  main {
-    padding: 24px;
-  }
-
-  footer {
-    padding: 24px;
   }
 
   nav {
@@ -39,15 +29,6 @@
 
   .mobile-menu.show {
     display: block;
-  }
-
-  main {
-    padding: 24px;
-  }
-
-  .footer-inner {
-    padding: 24px;
-    margin: 0;
   }
 
   .footer_logo {

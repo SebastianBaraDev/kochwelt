@@ -26,34 +26,17 @@
 
   <body>
     <header>
-      <div class="header-inner">
-      <a href="./index.html"
-        ><img src="./img/logo.png" class="header_logo"
-      /></a>
-      <a href="./index.html" class="header_logo_mobile"
-        ><img src="./img/logo_small.png" class="header_logo_mobile"
-      /></a>
+      <div class="wrapper_container">
+      <div class="header_layout">
+      <a href="./index.html"><img src="./img/logo.png" class="header_logo"/></a>
+      <a href="./index.html" class="header_logo_mobile"><img src="./img/logo_small.png" class="header_logo_mobile"/></a>
       <nav>
-        <a href="./index.html">
-          <ul>
-            Startseite
-          </ul>
-        </a>
-        <a href="./rezept_des_tages.html">
-          <ul>
-            Rezept des Tages
-          </ul>
-        </a>
-        <a href="./contact.html">
-          <ul>
-            Kontakt
-          </ul>
-        </a>
-        <a href="./impressum.html">
-          <ul>
-            Impressum
-          </ul>
-        </a>
+        <ul>
+          <li><a href="./index.html">Startseite</a></li>
+          <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+          <li><a href="./contact.html">Kontakt</a></li>
+          <li><a href="./impressum.html">Impressum</a></li>
+        </ul>
       </nav>
       <!-- Mobile Menu -->
   <div class="nav-mobile">
@@ -66,25 +49,27 @@
     </ul>
   </div>
       </div>
-      <div class="separator"></div>
+      </div>
     </header>
 
     <main>
 
-      <div>
-        <section class="recipe">
-          <div id="rezept_des_tages"></div>
+      <section class="recipe">
+        <div class="wrapper_container recipe">
+          <div id="rezept_des_tages">
           <a href="rezept_des_tages.html"><img src="/img/gebratener Lachs.jpg" alt="Gebratener Lachs" /></a>
-
+        </div>
         <div>
             <h1>Gebratener Lachs mit Salat auf Zucchini und Grapefruit</h1>
             <p>Zart gebratener Lachs trifft auf frischen, knackigen Salat, eingebettet in feine Zucchini und fruchtige Grapefruit.
-Eine leichte, aromatische Kombination, die Frische, Genuss und Eleganz perfekt vereint.</p>
+               Eine leichte, aromatische Kombination, die Frische, Genuss und Eleganz perfekt vereint.</p>
             <a href="rezept_des_tages.html"><button>Rezept öffnen</button></a>
+        </div>
         </div>
     </section>
 
     <section class="recipe_suggestions ">
+      <div class="wrapper_container">
         <h2>Lust auf was Neues?</h2>
 
         <div class="cards">
@@ -105,9 +90,11 @@ Eine leichte, aromatische Kombination, die Frische, Genuss und Eleganz perfekt v
             </a>
 
         </div>
+        </div>
     </section>
 
      <section class="how_to">
+      <div class="wrapper_container">
         <h2>Pfanne vs. Wok – Was ist besser?</h2>
 
         <div class="howto-grid">
@@ -115,17 +102,20 @@ Eine leichte, aromatische Kombination, die Frische, Genuss und Eleganz perfekt v
 
             <img src="img/wok.jpg" alt="Wok">
         </div>
+      </div>
     </section>
   
     </main>
 
     <footer>
-      <div class="footer-inner">
+      <div class="wrapper_container">
+      <div class="footer_layout">
       <img src="./img/logo.png" class="footer_logo" />
       <img src="./img/logo_small.png" class="footer_logo_small">
       <div class="footer_links">
         <a href="./impressum.html">Impressum</a>
         <a href="./datenschutz.html">Datenschutz</a>
+      </div>
       </div>
       </div>
     </footer>
