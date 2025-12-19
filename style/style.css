@@ -156,8 +156,8 @@
   background-color: #f2f2f2;
   border-radius: 10px;
   padding: 5px 10px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 45px;
 }
 
 .recipe_icons {
@@ -324,4 +324,12 @@ height: 50px;
 
 .main_style {
   margin: auto;
+}
+
+.standardline {
+    border: none;
+    height: 2px; 
+    background-color: rgba(202, 200, 200, 0.3); 
+    width: 100%; 
+    margin-top: 0px
 }
