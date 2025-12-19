@@ -97,6 +97,9 @@
     display: block;
     margin-right: auto;
   }
+  .recipe img {
+    width: auto;
+  }
 
   .social_icon {
     height: 32px;
