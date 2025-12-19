@@ -292,20 +292,7 @@ textarea {
   margin: 20px;
 }
 
-.left-box {
-  flex: 1; 
-  min-width: 200px;
-  background: #f8f8f8;
-  padding: 15px;
-  border-radius: 8px;
-}
 
-.right-box {
-  flex: 2;
-  background: #fff8e1;
-  padding: 15px;
-  border-radius: 8px;
-}
 
 .full-img {
   width: 100%;
