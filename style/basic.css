@@ -84,7 +84,7 @@ header {
   display: none;
   height: 60px;
 }
-ul {
+.nav_list {
   display: flex;
   align-items: flex-end;
   gap: 20px;
