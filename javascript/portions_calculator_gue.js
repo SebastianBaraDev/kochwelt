@@ -11,51 +11,9 @@ let zartbitterschokolade = 50;
 let backkakao = 20;
 
 
-/*Objekt
-
-let my_recipe_object ={
-    rosinencalc : function calc1(){
-    const portions = document.getElementById("portions").value;
-    console.log(portions)
-    let amount1 = (rosinen/4*portions) + "g";
-    console.log(amount1)
-    return amount1;
-}
-    rumcalc : function calc2(){
-        const portions = document.getElementById("portions").value;
-    console.log(portions)
-    let amount2 = (rosinen/4*portions) + "g";
-    console.log(amount2)
-    return amount2;
-}    
-    eicalc : 1,
-    zuckercalc : 50,
-    apfelmuscalc : 3,
-    schlagoberscalc : 200,
-    zartbitterschokoladecalc : 50,
-    backkakaocalc : 20,
-}*/
-
-/*Handover to html
-
-function value1(){
-let amount1 = document.getElementById("rosinen");
-amount1.innerHTML = calc();
-console.log(amount1.innerHTML);
-return amount1
-}*/
-
-
 /*Funktionen*/
 
 function calcrecipe(){
-    if (document.getElementById("portions").value > 20) {
-        return "invalid"
-    }
-    else if(document.getElementById("portions").value < 1){
-        return "invalid"
-    }
-    else {
     calc_ingred_1()
     value_ingred_1()
     calc_ingred_2()
@@ -72,9 +30,23 @@ function calcrecipe(){
     value_ingred_7()
     calc_ingred_8()
     value_ingred_8()
-}}
+}
 
+//Fehlermeldung - gültige Zahl und zwischen 1 und 20
 
+function checkvalue() {
+    const inputElement = document.getElementById('portions');
+    const wert = parseInt(inputElement.value);
+    const errormessageElement = document.getElementById('errormessage');
+
+    // Prüfen, ob es eine gültige Zahl ist und im Bereich liegt (1 bis 20)
+    if (isNaN(wert) || wert < 1 || wert > 20) {
+        errormessageElement.textContent = 'Fehler: Bitte nur Zahlen zwischen 1 und 20 eingeben!';
+    } else {
+        calcrecipe();
+        errormessageElement.textContent = '';
+    }
+}
 
 
 /*-->Ingredient 1*/
