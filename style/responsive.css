@@ -145,3 +145,20 @@
   }
 
 }
+@media (max-width: 470px) {
+
+.recipe_ingredients_header {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe_profil {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+  }
+
+
+}
