@@ -324,3 +324,6 @@ height: 50px;
 .julian_header img {
   height: 300px;
 }
+.mengenrechner_mobile {
+    display: flex;
+  } 
