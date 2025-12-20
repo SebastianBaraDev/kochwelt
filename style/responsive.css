@@ -1,8 +1,8 @@
-@media (max-width: 1280px) {
+@media (max-width: 1320px) {
   .wrapper_container {
   max-width: 1440px;
   padding: 0 24px;
-  width: 100%;
+  width: 93%;
 }
 
 .recipe{
@@ -61,6 +61,14 @@
   .footer_logo_small {
     display: block;
   }
+
+    .howto-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: left;
+}
 }
 
 @media (max-width: 768px) {
@@ -135,4 +143,5 @@
   body figure {
     margin: 0;
   }
+
 }
