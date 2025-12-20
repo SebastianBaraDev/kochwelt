@@ -57,7 +57,7 @@ function calc_ingred_1(){
     console.log("Button gedrückt")
     const portions = document.getElementById("portions").value;
     console.log(portions)
-    let amount_1 = (rosinen/4*portions) + "g" + " " + "Rosinen";
+    let amount_1 = (rosinen/4*Math.round(portions)) + "g" + " " + "Rosinen";
     console.log(amount_1)
     return amount_1;
 }
@@ -77,7 +77,7 @@ function calc_ingred_2(){
     console.log("Button gedrückt")
     const portions = document.getElementById("portions").value;
     console.log(portions)
-    let amount_2 = (rum/4*portions) + "cl" + " " + "Rum";
+    let amount_2 = (rum/4*Math.round(portions)) + "cl" + " " + "Rum";
     console.log(amount_2)
     return amount_2;
 }
@@ -97,7 +97,7 @@ function calc_ingred_3(){
     console.log("Button gedrückt")
     const portions = document.getElementById("portions").value;
     console.log(portions)
-    let amount_3 = (ei/4*portions + " " + "Ei (mittelgroß)");
+    let amount_3 = (ei/4*Math.round(portions)) + " " + "Ei (mittelgroß)";
     console.log(amount_3)
     return amount_3;
 }
@@ -117,7 +117,7 @@ function calc_ingred_4(){
     console.log("Button gedrückt")
     const portions = document.getElementById("portions").value;
     console.log(portions)
-    let amount_4 = (zucker/4*portions) + "g" + " " + "Zucker";
+    let amount_4 = (zucker/4*Math.round(portions)) + "g" + " " + "Zucker";
     console.log(amount_4)
     return amount_4;
 }
@@ -137,7 +137,7 @@ function calc_ingred_5(){
     console.log("Button gedrückt")
     const portions = document.getElementById("portions").value;
     console.log(portions)
-    let amount_5 = (apfelmus/4*portions) + "EL" + " " + "Apfelmus";
+    let amount_5 = (apfelmus/4*Math.round(portions)) + "EL" + " " + "Apfelmus";
     console.log(amount_5)
     return amount_5;
 }
@@ -157,7 +157,7 @@ function calc_ingred_6(){
     console.log("Button gedrückt")
     const portions = document.getElementById("portions").value;
     console.log(portions)
-    let amount_6 = (schlagobers/4*portions) + "g" + " " + "Schlagobers";
+    let amount_6 = (schlagobers/4*Math.round(portions)) + "g" + " " + "Schlagobers";
     console.log(amount_6)
     return amount_6;
 }
@@ -177,7 +177,7 @@ function calc_ingred_7(){
     console.log("Button gedrückt")
     const portions = document.getElementById("portions").value;
     console.log(portions)
-    let amount_7 = (zartbitterschokolade/4*portions) + "g" + " " + "Zartbitterschokolade geschmolzen";
+    let amount_7 = (zartbitterschokolade/4*Math.round(portions)) + "g" + " " + "Zartbitterschokolade geschmolzen";
     console.log(amount_7)
     return amount_7;
 }
@@ -197,7 +197,7 @@ function calc_ingred_8(){
     console.log("Button gedrückt")
     const portions = document.getElementById("portions").value;
     console.log(portions)
-    let amount_8 = (backkakao/4*portions) + "g" + " " + "Backkakao (ungesüsst)";
+    let amount_8 = (backkakao/4*Math.round(portions)) + "g" + " " + "Backkakao (ungesüsst)";
     console.log(amount_8)
     return amount_8;
 }
