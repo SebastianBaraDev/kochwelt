@@ -79,12 +79,7 @@
 }
 
 @media (max-width: 768px) {
-  .recipe_ingredients_header {
-    gap: 10px;
-  }
-  .recipe_input_form {
-    margin: 0;
-  }
+  
   h1 {
     font-size: 24px;
   } 

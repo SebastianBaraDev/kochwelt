@@ -31,6 +31,9 @@
   background-color: #eaeaea;
 }
 
+.recipe_ingredients_header {
+    gap: 10px;
+  }
 .recipe {
   display: flex;
   justify-content: center;
@@ -326,4 +329,7 @@ height: 50px;
 }
 .mengenrechner_mobile {
     display: flex;
-  } 
+} 
+.recipe_input_form {
+    margin: 0;
+}
