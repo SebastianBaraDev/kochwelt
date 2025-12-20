@@ -1,9 +1,15 @@
-@media (max-width: 1320px) {
-  .wrapper_container {
-  max-width: 1440px;
+@media (max-width: 1800px) {
+  .wrapper_container{
+  width: auto;
   padding: 0 24px;
   width: 93%;
 }
+}
+
+
+
+@media (max-width: 1320px) {
+
 
 .recipe{
   flex-direction: column;
@@ -144,6 +150,10 @@
     margin: 0;
   }
 
+  li {
+    width: auto;
+
+  }
 }
 @media (max-width: 470px) {
 
