@@ -58,9 +58,10 @@
   <main>
   <hr>
     <div class="wrapper_container main_style">
-    <section>
-      <img src="./img/rote_linsensuppe_vegan.png" alt="Foto von einer rote Linsensuppe Vegan mit Zutaten">
+    <section class="julian_header">
       <h1>Rote Linsensuppe Vegan</h1>
+      <br>
+      <img src="./img/rote_linsensuppe_vegan.png" alt="Foto von einer rote Linsensuppe Vegan mit Zutaten">
     </section>
 
     <section class="recipe_info_line">
@@ -82,8 +83,10 @@
 
     <form class="quantity">
       <label for="Mengenangaben">Zutaten für:</label>
+      <div class="mengenrechner_mobile">
       <input id="number" type="number" required min="1" max="20" value="4">
       <button type="button" onclick="calculate()">Portionen</button>
+      </div>
     </form>
     <!-- Zutatenliste -->
     <table id="table">
@@ -133,6 +136,7 @@
         </h5>
         <img class="julian_hergert_Profilbild" src="./img/julian Hergert.jpg" alt="Bild von Julian Hergert">
       </figure>
+      <br>
     </section>
     </div>
   </main>

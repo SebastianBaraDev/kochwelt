@@ -82,11 +82,10 @@
   h1 {
     font-size: 24px;
   }
-
-  #rezept_des_tages{
-    width: 100%;
-    
-  }
+  
+  .mengenrechner_mobile {
+    display: flex;
+  }  
 
   h2 {
     font-size: 22px;
@@ -171,5 +170,5 @@
   
 }
 
-  }
+}
 
