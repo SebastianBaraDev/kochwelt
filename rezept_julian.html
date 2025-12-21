@@ -9,90 +9,155 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/logo_small.png">
 
   <link rel="stylesheet" href="./style/style.css">
-  <link rel="stylesheet" href="./style/basic.css">
-  <link rel="stylesheet" href="./style/responsive.css">
-  <link rel="stylesheet" href="./style/menu_window.css">
-  <link rel="stylesheet" href="./style/personally_rezept_style.css">
-
-  <script src="./javascript/rechner.js"></script>
-  <link rel="stylesheet" href="./style/style.css">
-  <link rel="stylesheet" href="./style/basic.css">
-  <link rel="stylesheet" href="./style/responsive.css">
-
-  <script src="./javascript/menu_window.js"></script>
+    <link rel="stylesheet" href="./style/basic.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    
+    <script src="./javascript/menu_window.js"></script>
 </head>
-
-<body onload="calculate()">
-  <header>
-    <div class="wrapper_container">
+<body>
+    <header>
+      <div class="wrapper_container">
       <div class="header_layout">
-        <a href="./index.html"><img src="./img/logo.png" class="header_logo" /></a>
-        <a href="./index.html" class="header_logo_mobile"><img src="./img/logo_small.png"
-            class="header_logo_mobile" /></a>
-        <nav>
-          <ul class="nav_list">
-            <li><a href="./index.html">Startseite</a></li>
-            <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
-            <li><a href="./contact.html">Kontakt</a></li>
-            <li><a href="./impressum.html">Impressum</a></li>
-          </ul>
-        </nav>
-        <!-- Mobile Menu -->
-        <div class="nav-mobile">
-          <button class="burger" onclick="toggleMenu()">☰</button>
-          <ul id="mobileMenu" class="mobile-menu">
-            <li><a href="./index.html">Startseite</a></li>
-            <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
-            <li><a href="./contact.html">Kontakt</a></li>
-            <li><a href="./impressum.html">Impressum</a></li>
-          </ul>
-        </div>
+      <a href="./index.html"><img src="./img/logo.png" class="header_logo"/></a>
+      <a href="./index.html" class="header_logo_mobile"><img src="./img/logo_small.png" class="header_logo_mobile"/></a>
+      <nav>
+        <ul class="nav_list">
+          <li><a href="./index.html">Startseite</a></li>
+          <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+          <li><a href="./contact.html">Kontakt</a></li>
+          <li><a href="./impressum.html">Impressum</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Menu -->
+  <div class="nav-mobile">
+    <button class="burger" onclick="toggleMenu()">☰</button>
+    <ul id="mobileMenu" class="mobile-menu">
+      <li><a href="./index.html">Startseite</a></li>
+      <li><a href="./rezept_des_tages.html">Rezept des Tages</a></li>
+      <li><a href="./contact.html">Kontakt</a></li>
+      <li><a href="./impressum.html">Impressum</a></li>
+    </ul>
+  </div>
       </div>
-    </div>
+      </div>
   </header>
-  <hr>
 
   <main>
-    <div class="wrapper_container main_style">
-      <section class="julian_header">
-        <h1>Rote Linsensuppe Vegan</h1>
-        <br>
-        <img src="./img/rote_linsensuppe_vegan.png" alt="Foto von einer rote Linsensuppe Vegan mit Zutaten">
-      </section>
+    <hr>
+        <div class="wrapper_container main_style">
+        <h3>Rote Linsensuppe vegan</h3>
+    <div class="recipe_image_julian">
+    </div>
 
-      <section class="recipe_info_line">
-        <figure class="recipe_info">
-          <img src="./img/icons/clock-regular.svg" alt="time_icon" class="recipe_icons">
-          <figcaption>ca. 25min.</figcaption>
-        </figure>
-        <figure class="recipe_info">
-          <img src="./img/icons/brain-solid.svg" alt="time_icon" class="recipe_icons">
-          <figcaption>mittel</figcaption>
-        </figure>
-        <figure class="recipe_info">
-          <img src="./img/icons/calendar-alt-regular.svg" alt="time_icon" class="recipe_icons">
-          <figcaption>13.12.2025</figcaption>
-        </figure>
-      </section>
+   <div class="recipe_info_line"> 
+        <div class="recipe_info">
+            <img src="./img/icons/clock-regular.svg" alt="time_icon" class="recipe_icons">
+            <span>ca. 25 Minuten</span> 
+        </div>
+        <div class="recipe_info">
+            <img src="./img/icons/brain-solid.svg" alt="time_icon" class="recipe_icons">
+            <span>mittel</span>
+        </div>
+        <div class="recipe_info">
+            <img src="./img/icons/calendar-alt-regular.svg" alt="time_icon" class="recipe_icons">
+            <span>13.12.2025</span>
+        </div>
+    </div> 
 
       <div id="divider"></div>
-
-      <form class="quantity">
-        <label for="Mengenangaben">Zutaten für:</label>
+<br>
+     <!-- Zutaten -->
+      <div class="recipe_ingredients_header">
+        <span style="font-size: 20px; font-weight: bold;">Zutaten für</span> 
         <div class="mengenrechner_mobile">
-          <input id="number" type="number" required min="1" max="20" value="4">
-          <button type="button" onclick="calculate()">Portionen</button>
+        <input type ="number" min="1" max="20" value= "1" id="portions" class="recipe_input_form" required>
+        <button type="button" onclick="calcrecipe()">Portionen</button>
         </div>
-      </form>
-      <!-- Zutatenliste -->
-      <table id="table">
-        <!-- Hier wird eine Zutatenliste mit kalkulierten Mengenangaben generiert -->
-      </table>
+    </div><br>
+
+     <table class="recipe_ingredients_table">
+            <tr>
+                <th style="width:1440px"></th>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_1">125ml Gemüsebrühe</td>
+            </tr>
+
+            <tr>
+                <td id="ingred_2">50g rote Linsen</td>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_3">50g Möhren</td>
+            </tr>
+
+            <tr>
+                <td id="ingred_4">100g Kokosmilch</td>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_5">1 kleine Zwiebeln</td>
+            </tr>
+
+            <tr>
+                <td id="ingred_6">1 kleine Knoblauchzehen</td>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_7">5g Ingwer, frisch</td>
+            </tr>
+
+            <tr>
+                <td id="ingred_8">2g Kurkuma, frisch</td>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_9">1 TL Öl</td>
+            </tr>
+
+            <tr>
+                <td id="ingred_10">0,25 TL Kreuzkümmel gemahlen</td>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_11">0,25 TL Chilli</td>
+            </tr>
+
+            <tr>
+                <td id="ingred_12">0,5 TL Limettensaft</td>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_13">0,25 Bund Petersilie</td>
+            </tr>
+
+            <tr>
+                <td id="ingred_14">1 Prisen Salz</td>
+            </tr>
+
+            <tr class="tr_grey">
+                <td id="ingred_15">1 getrocknete Aprikosen (Geheimzutat meines Vaters)</td>
+            </tr>
+
+        </table>
+
+     <script src="./javascript/portions-calculator.js"></script>
 
       <!-- Zubereitung -->
       <figure>
         <figcaption>
           <h3>Zubereitung</h3>
+          <div class="recipe_info_line">
+        <div class="recipe_info"> 
+            <img src="./img/icons/clock-regular.svg" alt="time_icon" class="recipe_icons">
+            <span><strong>45 min</strong> Gesamtzeit</span>
+        </div>
+        <div class="recipe_info"> 
+            <img src="./img/icons/clock-regular.svg" alt="time_icon" class="recipe_icons">
+            <span><strong>20 min</strong> Arbeitszeit</span>
+        </div> 
+    </div>
           <ol>
             <li>Zuerst wäschst du die die Linsen in einem Sieb mit kaltem Wasser.</li>
             <li>Dann schälst du die Zwiebel und die Knoblauchzehe und schneidest beides in kleine Würfel. Das Stück
@@ -114,25 +179,13 @@
         </figcaption>
       </figure>
 
-      <section>
-        <figure>
-          <h4>Hauptrezept erstellt von
-            <span>
-              <a class="emmi" href="https://emmikochteinfach.de/rote-linsensuppe-mit-kokosmilch/">Emmi,</a>
-            </span>
-          </h4>
-          <span>
-            mit einer extra Zutat, die mein Vater mir gezeigt hat. Ich wünsche mir, euch schmeckt es genau so gut wie
-            mir. ;)
-          </span><br>
-          <br>
-          <h5>
-            editiert von Julian Hergert
-          </h5>
-          <img class="julian_hergert_Profilbild" src="./img/julian Hergert.jpg" alt="Bild von Julian Hergert">
-        </figure>
-        <br>
-      </section>
+      <h5>Rezept erstellt von</h5>
+
+    <div class="recipe_profil">
+        <img src="./img/julian Hergert.jpg" alt="Profilbild des Autors">
+        <p style="font-size: 40px;">Julian Hergert<p>
+    </div>
+          
     </div>
   </main>
 

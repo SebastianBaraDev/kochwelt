@@ -139,6 +139,16 @@
   background-repeat: no-repeat;
   margin-top: 40px;
 }
+.recipe_image_julian {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  background-image: url('../img/rote_linsensuppe_vegan.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+}
 
 .recipe_image_kaiserschmarren {
   height: 300px;
