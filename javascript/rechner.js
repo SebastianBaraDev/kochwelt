@@ -1,5 +1,10 @@
-//dieser Rechner ist von Julian Hergert selbst geschrieben. Ich habe hier nichts gecopy/pasted. :D
-//ich habe vor Jahren schon einige Javascriptübungen genmacht.
+//dieser Rechner ist von Julian Hergert selbst geschrieben. 
+//Bis auf die Validierung habe ich hier nichts gecopy/pasted.
+//vor Jahren Jahren habe ich schon einige Javascriptübungen genmacht.
+//für die Befehle "parseInt" und "replace" habe ich lange für gegooglet
+//mir war wichtig, dass diese funktion skalierbar ist und 
+//ich wollte wissen, ob meine Idee funktioniert
+//und ich diese auch umsetzen kann
 const rezeptList = [
   "125ml Gemüsebrühe",
   "50g rote Linen",
