@@ -1,3 +1,5 @@
+//dieser Rechner ist von Julian Hergert selbst geschrieben. Ich habe hier nichts gecopy/pasted. :D
+//ich habe vor Jahren schon einige Javascriptübungen genmacht.
 const rezeptList = [
   "125ml Gemüsebrühe",
   "50g rote Linen",
@@ -15,7 +17,6 @@ const rezeptList = [
   "1 priese Salz",
   "1 getrocknete Abrikosen, Geheimzutat von meinem Vater"
 ]
-
 
 function calculate() {
   let valueFromInput = document.getElementById('number').value
@@ -40,4 +41,3 @@ function calculate() {
   }
   console.log(newRezeptList)
 }
-
