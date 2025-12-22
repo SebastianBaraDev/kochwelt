@@ -1,41 +1,62 @@
-const basePortions = 1;
+let basePortions = 1;
 
-// Alle Zutaten-Zeilen sammeln
-const ingredientElements = document.querySelectorAll(
-  '[id^="ingred_"]'
-);
+let recipe = document.getElementById("recipe");
+let ingredientElements = [];
+let allElements = document.getElementsByTagName("*");
 
-const originalIngredients = Array.from(ingredientElements).map(el => el.innerText);
+for (let i = 0; i < allElements.length; i++) {
+  let id = allElements[i].id;
+
+  if (id && id.indexOf("ingred_") === 0) {
+    ingredientElements.push(allElements[i]);
+  }
+}
+
+let originalIngredients = [];
+
+for (let i = 0; i < ingredientElements.length; i++) {
+  originalIngredients.push(ingredientElements[i].innerText);
+}
+
+
+
+
 
 function calcrecipe() {
-  const input = document.getElementById("portions");
-  let portions = parseInt(input.value);
 
-  // Validierung: nur Zahlen von 1–20
-  if (isNaN(portions) || portions < 1) portions = 1;
+  let input = document.getElementById("portions");
+  let portions = Number(input.value);
+
+  if (portions < 1) portions = 1;
   if (portions > 20) portions = 20;
 
   input.value = portions;
 
-  ingredientElements.forEach((el, index) => {
-    const originalText = originalIngredients[index];
+  for (let i = 0; i < ingredientElements.length; i++) {
 
-    const match = originalText.match(/^([\d.,]+)\s*(.*)$/);
+    let text = originalIngredients[i];
 
-    if (!match) {
-      el.innerText = originalText;
-      return;
+    let parts = text.split(" ");
+
+    let number = Number(parts[0]);
+
+   if (isNaN(number)) {
+      ingredientElements[i].innerText = text;
+    continue;
     }
 
-    let amount = parseFloat(match[1].replace(",", "."));
-    let restText = match[2];
+  let restText = "";
+    for (let j = 1; j < parts.length; j++) {
+      restText += parts[j] + " ";
+    }
 
-    let newAmount = (amount / basePortions) * portions;
+    let newValue = (number / basePortions) * portions;
 
-    newAmount = Number.isInteger(newAmount)
-      ? newAmount
-      : newAmount.toFixed(2);
+    if (newValue % 1 !== 0) {
+      newValue = newValue.toFixed(2);
+    }
 
-    el.innerText = `${newAmount} ${restText}`;
-  });
+    ingredientElements[i].innerText = newValue + " " + restText.trim();
+  }
 }
+
