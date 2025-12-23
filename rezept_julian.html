@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./style/responsive.css">
     
     <script src="./javascript/menu_window.js"></script>
+    <script src="./javascript/amountCalculator.js"></script>
 </head>
 <body>
     <header>
@@ -71,78 +72,73 @@
         <span style="font-size: 20px; font-weight: bold;">Zutaten für</span> 
         <div class="mengenrechner_mobile">
         <input type ="number" min="1" max="20" value= "1" id="portions" class="recipe_input_form" required>
-        <button type="button" onclick="calcrecipe()">Portionen</button>
+        <button type="button" onclick="calculateIngredients()">Portionen</button>
         </div>
     </div><br>
 
-     <table class="recipe_ingredients_table">
-            <tr>
-                <th style="width:1440px"></th>
-            </tr>
+    <table>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="125">125</td>
+            <td>ml Gemüsebrühe</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="50">50</td>
+            <td>g rote Linsen</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="50">50</td>
+            <td>g Möhren</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="100">100</td>
+            <td>g Kokosmilch</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="1">1</td>
+            <td>kleine Zwiebel(n)</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="1">1</td>
+            <td>kleine Knoblauchzehe(n)</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="5">5</td>
+            <td>g Ingwer, frisch</td>
+        </tr> 
+        <tr>
+            <td class="amount" data-amount="2">2</td>
+            <td>g Kurkuma, frisch</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="1">1</td>
+            <td>TL Öl</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="0.25">0.25</td>
+            <td>TL Kreuzkümmel gemahlen</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="0.25">0.25</td>
+            <td>TL Chilli</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="0.5">0.5</td>
+            <td>TL Limettensaft</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="0.25">0.25</td>
+            <td>Bund Petersilie</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="1">1</td>
+            <td>Prisen Salz</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="1">1</td>
+            <td>getrocknete Aprikose(n) - Geheimzutat meines Vaters</td>
+        </tr>
+</table>
 
-            <tr class="tr_grey">
-                <td id="ingred_1">125ml Gemüsebrühe</td>
-            </tr>
-
-            <tr>
-                <td id="ingred_2">50g rote Linsen</td>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_3">50g Möhren</td>
-            </tr>
-
-            <tr>
-                <td id="ingred_4">100g Kokosmilch</td>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_5">1 kleine Zwiebeln</td>
-            </tr>
-
-            <tr>
-                <td id="ingred_6">1 kleine Knoblauchzehen</td>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_7">5g Ingwer, frisch</td>
-            </tr>
-
-            <tr>
-                <td id="ingred_8">2g Kurkuma, frisch</td>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_9">1 TL Öl</td>
-            </tr>
-
-            <tr>
-                <td id="ingred_10">0,25 TL Kreuzkümmel gemahlen</td>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_11">0,25 TL Chilli</td>
-            </tr>
-
-            <tr>
-                <td id="ingred_12">0,5 TL Limettensaft</td>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_13">0,25 Bund Petersilie</td>
-            </tr>
-
-            <tr>
-                <td id="ingred_14">1 Prisen Salz</td>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_15">1 getrocknete Aprikosen (Geheimzutat meines Vaters)</td>
-            </tr>
-
-        </table>
-
-     <script src="./javascript/portions-calculator.js"></script>
 
       <!-- Zubereitung -->
       <figure>

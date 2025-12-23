@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./style/responsive.css" />
 
     <script src="./javascript/menu_window.js"></script>
+    <script src="./javascript/amountCalculator.js"></script>
   </head>
   <body>
     <header>
@@ -96,46 +97,45 @@
           id="portions"
           class="recipe_input_form"
         />
-        <button onclick="calcrecipe()">Portionen</button>
+        <button onclick="calculateIngredients()">Portionen</button>
         </div>
       </div>
       <br>
 
-      <table class="recipe_ingredients_table">
-        <tr>
-          <th style="width: 1440px"></th>
-        </tr>
-
+      <table>
         <tr class="tr_grey">
-          <td id="ingred_1">125 g Lachsfilet, tiefgefroren</td>
+            <td class="amount" data-amount="125">125</td>
+            <td>g Lachsfilet, tiefgefroren</td>
         </tr>
         <tr>
-          <td id="ingred_2">0.5 St. Grapefruit</td>
+            <td class="amount" data-amount="0.5">0.5</td>
+            <td>St. Grapefruit</td>
         </tr>
         <tr class="tr_grey">
-          <td id="ingred_3">0.25 St. Schalotten</td>
+            <td class="amount" data-amount="0.25">0.25</td>
+            <td>St. Schalotten</td>
         </tr>
         <tr>
-          <td id="ingred_4">0.5 St. Zucchini</td>
+            <td class="amount" data-amount="0.5">0.5</td>
+            <td>St. Zucchini</td>
         </tr>
         <tr class="tr_grey">
-          <td id="ingred_5">1.5 El Olivenöl</td>
+            <td class="amount" data-amount="1.5">1.5</td>
+            <td>El Olivenöl</td>
         </tr>
         <tr>
-          <td id="ingred_6">0.25 Tl Senf</td>
+            <td class="amount" data-amount="0.25">0.25</td>
+            <td>TL Senf</td>
         </tr>
         <tr class="tr_grey">
-          <td id="ingred_7">Prise Salz</td>
-        </tr>
+            <td class="amount" data-amount="0.25">0.25</td>
+            <td>St. Bio Zitrone</td>
+        </tr> 
         <tr>
-          <td id="ingred_8">Pfeffer, schwarz gemahlen</td>
+            <td></td>
+            <td>Salz und Pfeffer, schwarz gemahlen nach Geschmack</td>
         </tr>
-        <tr class="tr_grey">
-          <td id="ingred_9">0.25 St. Bio Zitrone</td>
-        </tr>
-      </table>
-
-      <script src="./javascript/portions-calculator.js"></script>
+</table>
 
       <h3>Zubereitung</h3>
       <div class="recipe_info_line">

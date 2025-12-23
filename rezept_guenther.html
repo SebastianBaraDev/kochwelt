@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./style/responsive.css">
 
     <script src="./javascript/menu_window.js"></script>
+    <script src="./javascript/amountCalculator.js"></script>
 </head>
 
 <body>
@@ -72,54 +73,47 @@
     <div class="recipe_ingredients_header">  
             <span style="font-size: 20px; font-weight: bold;">Zutaten für</span>
             <div class="mengenrechner_mobile">
-            <input type ="number" min="1" max="20" value= "4" id="portions" class="recipe_input_form" placeholder="Zahlen 1-20">
-            <button onclick="checkvalue()" id="calcbutton">Portionen</button>
+            <input type ="number" min="1" max="20" value= "1" id="portions" class="recipe_input_form" placeholder="Zahlen 1-20">
+            <button onclick="calculateIngredients()" id="calcbutton">Portionen</button>
             </div>
         </div>
     <br>
-        <p id="errormessage" style="color: red;"></p>
-        <table class="recipe_ingredients_table">
-            <tr>
-                <th style="width:1440px"></th>
+ 
+    <table>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="7.5">7.5</td>
+            <td>g Rosinen</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="1">1</td>
+            <td>cl Rum</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="1">1</td>
+            <td>Ei (mittelgroß)</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="50">50</td>
+            <td>g Zucker</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="0.75">0.75</td>
+            <td>EL Apfelmus</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="50">50</td>
+            <td>g Schlagobers</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="12.5">12.5</td>
+            <td>g Zartbitterschokolade geschmolzen</td>
+        </tr> 
+        <tr>
+            <td class="amount" data-amount="5">5</td>
+            <td>g Backkakao (ungesüßt)</td>
+        </tr>
+</table>
                 
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_1">30g Rosinen</td>
-            
-            </tr>
-            <tr>
-                <td id="ingred_2">4cl Rum</td>
-        
-            </tr>
-            <tr class="tr_grey">
-                <td id="ingred_3">1 Ei (mittelgroß)</td>
-            
-            </tr>
-            <tr>
-                <td id="ingred_4">50g Zucker</td>
-            
-            </tr>
-            <tr class="tr_grey">
-                <td id="ingred_5">3EL Apfelmus</td>
-            
-            </tr>
-            <tr>
-                <td id="ingred_6">200g Schlagobers</td>
-            
-            </tr>
-            <tr class="tr_grey">
-                <td id="ingred_7">50g Zartbitterschokolade geschmolzen</td>
-            
-            </tr>
-            <tr>
-                <td id="ingred_8">20g Backkakao (ungesüßt)</td>
-             
-            </tr>
-
-        </table>
-
-     <script src="./javascript/portions_calculator_gue.js"></script>
 
         <h3>Zubereitung</h3>
         <div class="recipe_info_line">

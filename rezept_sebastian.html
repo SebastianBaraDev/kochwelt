@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./style/responsive.css">
     
     <script src="./javascript/menu_window.js"></script>
+    <script src="./javascript/amountCalculator.js"></script>
+
 </head>
 <body>
     <header>
@@ -69,75 +71,69 @@
         <span style="font-size: 20px; font-weight: bold;">Zutaten für</span> 
         <div class="mengenrechner_mobile">
         <input type ="number" min="1" max="20" value= "1" id="portions" class="recipe_input_form" required>
-        <button type="button" onclick="calcrecipe()">Portionen</button>
+        <button type="button" onclick="calculateIngredients()">Portionen</button>
         </div>
     </div><br>
 
-     <table class="recipe_ingredients_table">
-            <tr>
-                <th style="width:1440px"></th>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_1">1 Rinderrouladen</td>
-            </tr>
-
-            <tr>
-                <td id="ingred_2">0.5 Zwiebel(n)</td>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_3">0.5 Gewürzgurke(n)</td>
-            </tr>
-
-            <tr>
-                <td id="ingred_4">0.5 EL Senf, mittelscharf</td>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_5">1.5 Scheiben Frühstücksspeck
-                </td>
-            </tr>
-
-            <tr>
-                <td id="ingred_6">0.25 EL Butterschmalz</td>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_7">20 g Knollensellerie</td>
-            </tr>
-
-            <tr>
-                <td id="ingred_8">0.25 Möhre(n)</td>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_9">0.125 Stange(n) Lauch</td>
-            </tr>
-
-            <tr>
-                <td id="ingred_10">45 ml Rotwein</td>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_11">60 ml Rinderfond</td>
-            </tr>
-
-            <tr>
-                <td id="ingred_12">0.25 TL Speisestärke</td>
-            </tr>
-
-            <tr class="tr_grey">
-                <td id="ingred_13">10 ml Gurkenflüssigkeit</td>
-            </tr>
-
-            <tr>
-                <td>Salz und Pfeffer nach Geschmack</td>
-            </tr>
-
-        </table>
-
-     <script src="./javascript/portions-calculator.js"></script>
+     <table>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="1">1</td>
+            <td>Rinderroulade(n)</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="0.5">0.5</td>
+            <td>Zwiebel(n)</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="0.5">0.5</td>
+            <td>Gewürzgurke(n)</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="0.5">0.5</td>
+            <td>EL Senf, mittelscharf</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="1.5">1.5</td>
+            <td>Scheiben Frühstücksspeck</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="0.25">0.25</td>
+            <td>EL Butterschmalz</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="20">20</td>
+            <td>g Knollensellerie</td>
+        </tr> 
+        <tr>
+            <td class="amount" data-amount="0.25">0.25</td>
+            <td>Möhre(n)</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="0.125">0.125</td>
+            <td>Stange(n) Lauch</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="45">45</td>
+            <td>ml Rotwein</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="60">60</td>
+            <td>ml Rinderfond</td>
+        </tr>
+        <tr>
+            <td class="amount" data-amount="0.25">0.25</td>
+            <td>TL Speisestärke</td>
+        </tr>
+        <tr class="tr_grey">
+            <td class="amount" data-amount="10">10</td>
+            <td>ml Gurkenflüssigkeit</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Salz und Pfeffer nach Geschmack</td>
+        </tr>
+</table>
+<br>
 
     <h3>Zubereitung</h3>
     <div class="recipe_info_line">
